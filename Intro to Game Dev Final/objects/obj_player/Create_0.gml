@@ -29,6 +29,10 @@ m_previousgrounded = false;
 m_hvel = 0;
 m_vvel = 0;
 
+//Record player position
+m_position_x = x
+m_position_y = y
+
 
 //Collisions
 
@@ -45,3 +49,4 @@ onCollideY = function() {
 	m_vvel = 0
 }
 
+depth = -99

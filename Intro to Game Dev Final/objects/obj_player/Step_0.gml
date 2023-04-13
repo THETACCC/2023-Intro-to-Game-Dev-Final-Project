@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-
+if global.player_talking = false {
 
 var haccel = 0;
 var vaccel = 0;
@@ -111,10 +111,7 @@ if (xinput > 0) and m_grounded {
 
 
 
-
-
-
-
+}
 
 
 
