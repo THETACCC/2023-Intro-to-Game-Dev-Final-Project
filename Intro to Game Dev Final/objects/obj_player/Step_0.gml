@@ -9,7 +9,7 @@ var vaccel = 0;
 var xinput = 0;
 var yinput = 0;
 
-if (keyboard_check(ord("A")) and !keyboard_check(ord("D")))  {
+if (keyboard_check(ord("A")) and !keyboard_check(ord("D"))) and global.player_talking = false  {
 
 	input_lag_left -= 1
 	if (input_lag_left < 0 ){ 
@@ -21,7 +21,7 @@ if (keyboard_check(ord("A")) and !keyboard_check(ord("D")))  {
 	input_lag_left = 1
 	m_hvel = lerp(m_hvel, 0, 0.1)
 }
-if (keyboard_check(ord("D")) and !keyboard_check(ord("A"))) {
+if (keyboard_check(ord("D")) and !keyboard_check(ord("A"))) and global.player_talking = false {
 
 	input_lag_right -= 1
 	if (input_lag_right < 0 ){ 

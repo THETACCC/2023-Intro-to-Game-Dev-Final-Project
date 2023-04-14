@@ -1,7 +1,16 @@
 function scr_set_defaults_for_text(){
-
+	line_break_pos[0,page_number] = 999
+	line_break_num[page_number] = 0
+	line_break_offset[page_number] = 0
+	
+	txtb_spr[page_number] = spr_mytextbox
+	
+	
 	speaker_sprite[page_number] = noone	
 	speaker_side[page_number] = 1
+	
+	snd[page_number] = snd_speak
+	
 }
 
 
@@ -17,15 +26,34 @@ text[page_number] = _text
 
 
 if argument_count > 1 {
-	speaker_sprite[page_number] = argument[1] 	
+	switch( argument[1]) 
+	{
+		//players
+		case "player":
+			speaker_sprite[page_number] = spr_player_speak
+			txtb_spr[page_number] = spr_mytextbox
+			speaker_side[page_number] = -1
+			snd[page_number] = snd_speak
+		break;
+		
+		
+		//npcs
+		case "npc":
+			speaker_sprite[page_number] = spr_npc2_speak
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak	
+		break;
+
+		case "npc-anrgy":
+			speaker_sprite[page_number] = spr_npc2_speak_angry
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak				
+		break;
+		
+	}
+
 	
 }
-
-
-
-
-
-
 
 page_number ++
 
