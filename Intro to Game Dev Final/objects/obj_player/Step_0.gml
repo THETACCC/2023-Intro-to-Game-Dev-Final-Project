@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.player_talking = false {
+if global.player_talking = false and global.player_inventory = false {
 
 var haccel = 0;
 var vaccel = 0;
@@ -111,10 +111,25 @@ if (xinput > 0) and m_grounded {
 
 
 
+
+
+
+
 }
 
-
+//open inventory
+if keyboard_check_pressed(vk_tab) and global.player_inventory = false and global.player_talking = false	
+{
+	
+	global.player_inventory = true	
+} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true and global.player_talking = false		{
+	
+	global.player_inventory = false	
+}
 
 m_previousgrounded = m_grounded
 
-
+if keyboard_check_pressed(vk_down)
+{
+show_debug_message(scr_inventory_search(obj_inventory,2) != -1)
+}

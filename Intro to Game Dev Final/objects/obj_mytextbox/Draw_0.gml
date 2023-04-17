@@ -230,8 +230,8 @@ if draw_char == text_length[page] && page == page_number - 1
 	
 	
 	//draw the options
-	var _op_space = 50
-	var _op_bord = 4
+	var _op_space = 40
+	var _op_bord = 5
 	for (var op = 0; op < option_number; op ++)
 	{
 	// the option box
@@ -246,7 +246,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	}
 	
 	//the option text
-	draw_text(_txtb_x + 16 + _op_bord, _txtb_y - _op_space*option_number + _op_space*op + 2, option[op])
+	draw_text(_txtb_x + 16 + _op_bord, _txtb_y - _op_space*option_number + _op_space*op + 3, option[op])
 		
 	}
 	
@@ -291,6 +291,6 @@ for (var c = 0 ; c < draw_char ; c ++)
 	
 	
 	// the text
-	draw_text_color(char_x[c,page] + _shake_x, char_y[c,page] + _float_y + _shake_y, char[c,page],col_1[c,page],col_2[c,page],col_3[c,page],col_4[c,page],1)	
+	draw_text_color(char_x[c,page] + _shake_x, char_y[c,page] + _float_y + _shake_y + 5, char[c,page],col_1[c,page],col_2[c,page],col_3[c,page],col_4[c,page],1)	
 	
 }

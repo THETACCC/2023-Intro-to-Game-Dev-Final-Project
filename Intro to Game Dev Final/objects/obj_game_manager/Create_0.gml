@@ -3,9 +3,6 @@
 
 
 //Player positions
-global.player_x = noone
-global.player_y = noone
-global.camera_x = noone
-global.camera_y = noone
 
 global.player_talking = false
+global.player_inventory = false

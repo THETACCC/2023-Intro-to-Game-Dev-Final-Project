@@ -4,6 +4,7 @@
 xTo = follow.x
 yTo = follow.y
 
+
 x += (xTo - x) / 5
 y += (yTo - y) / 5
 

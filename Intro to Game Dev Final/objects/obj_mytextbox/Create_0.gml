@@ -5,8 +5,8 @@ texttimer = 6
 //parameters
 textbox_width = 480
 textbox_height = 80
-boarder = 8
-line_sep = 12
+boarder = 12
+line_sep = 14
 line_width = textbox_width - boarder*2
 txtb_spr = spr_mytextbox
 txtb_img = 0

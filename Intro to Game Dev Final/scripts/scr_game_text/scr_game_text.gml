@@ -4,7 +4,7 @@ function scr_game_text(_text_id){
 switch(_text_id){
 
 	case "npc 1":
-					global.player_talking = true
+
 		scr_text("Hello",  "player")
 		scr_text("This is a test NPC", "npc")
 		scr_text("This is a test NPC with anrgy emotion", "npc-anrgy")		
@@ -18,24 +18,25 @@ switch(_text_id){
 		scr_text("you can choose options from here,you can choose options from here,you can choose options from here", "player")
 			scr_option("Sure" , "npc 1 - yes")
 			scr_option("2" , "npc 1 - no")			
-			scr_option("Who are you?" , "npc 1 - who")			
+			scr_option("Any job for me?" , "npc 1 - job")			
 		break
 		case "npc 1 - yes":
 			scr_text("12111",spr_npc2_speak)
-					global.player_talking = false
+
 			break
 		case "npc 1 - no":
 			scr_text("22222",spr_npc2_speak)
-					global.player_talking = false
-			break	
-		case "npc 1 - who":
-			scr_text("I am just a random NPC ",spr_npc2_speak)
-					global.player_talking = false
-			break	
-	
 
+			break	
+		case "npc 1 - job":
+			scr_text("could you bring me a red cube at the other room","npc")
 
+			break	
+		case "npc 1-find":
 		
+		scr_text("thanks!", "npc")
+
+		break
 }
 
 }
