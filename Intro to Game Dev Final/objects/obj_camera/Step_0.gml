@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 xTo = follow.x
-yTo = follow.y
+yTo = follow.y - 48
 
 
 x += (xTo - x) / 5
