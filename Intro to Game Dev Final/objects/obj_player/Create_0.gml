@@ -6,15 +6,15 @@ input_lag_left = 1
 input_lag_right = 1
 m_xRemainder = 0.0;
 m_yRemainder = 0.0;
-m_xspeedup = 1.25;
-m_xspeedup_run = 1.5
+m_xspeedup = 1.1;
+m_xspeedup_run = 1.25
 m_running = false
 
 
 
 m_grav = 0.98;
-m_maxhspeed = 5;
-m_maxhspeed_running = 12;
+m_maxhspeed = 2;
+m_maxhspeed_running = 5;
 m_maxvspeed = 30;
 m_jumppower = 25;
 m_isjump = false

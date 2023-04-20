@@ -32,18 +32,10 @@ if (keyboard_check(ord("D")) and !keyboard_check(ord("A"))) and global.player_ta
 	input_lag_right = 1
 	m_hvel = lerp(m_hvel, 0, 0.1)
 }
-if (keyboard_check_pressed(vk_space) && m_grounded ) {
-	
-	yinput -= 1
-}
-if (keyboard_check_pressed(vk_space) && !m_grounded ) {
-	
-	m_key_pressed = true
-}
 
 if keyboard_check(vk_shift) {
 m_running = true
-show_debug_message("Running")
+
 }	else {
 m_running = false	
 }
@@ -91,22 +83,25 @@ MoveY(m_vvel);
 
 //change the sprite direction based on our input
 if (xinput > 0)  {
-	image_xscale = 1;
+	image_xscale = -1;
 
 } else if (xinput < 0)    {
-	image_xscale = -1;
+	image_xscale = 1;
 }
 
-if (xinput > 0) and m_grounded {
+if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = false {
 
-
-} else if (xinput < 0)  and m_grounded  {
-
-} else if !m_grounded {
-	
-
-}   else {
-
+	sprite_index = spr_player_walk
+	image_speed = m_xspeedup
+} else if (xinput = 0)  and m_grounded and abs(m_hvel) <= 1  {
+	sprite_index = spr_player_idle
+	image_speed = 1
+} else if  abs(xinput) > 0 and m_running and global.player_inventory = false {
+	image_speed = m_xspeedup_run
+	sprite_index = spr_player_run
+}  else if global.player_inventory = true {
+	sprite_index = spr_player_idle
+	image_speed = 1	
 }
 
 
@@ -120,7 +115,9 @@ if (xinput > 0) and m_grounded {
 //open inventory
 if keyboard_check_pressed(vk_tab) and global.player_inventory = false and global.player_talking = false	
 {
-	
+	m_hvel = 0
+	MoveX(0)
+	sprite_index = spr_player_idle	
 	global.player_inventory = true	
 } else if keyboard_check_pressed(vk_tab) and global.player_inventory = true and global.player_talking = false		{
 	
