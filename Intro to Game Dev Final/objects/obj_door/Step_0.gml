@@ -2,13 +2,17 @@
 // You can write your code in this editor
 if instance_place(x,y,obj_player) {
 	if keyboard_check_pressed(ord("W")) {
+	obj_room_transition_out.start_transition = true
 
+		
+	}
+
+	if transition = true {
 	obj_player.x = target_x
 	obj_player.y = target_y
 	obj_camera.x = target_x
 	obj_camera.y = target_y
 	room_goto(target_room)
-		
-	}
 	
+	}
 }

@@ -39,3 +39,13 @@ function scr_inventory_add(root_object, itemType)
 	}
 	else return false
 }
+
+
+function scr_inventory_swap(object_from, slot_from,object_to, slot_to)
+{
+
+	var _itemFrom = object_from.inventory[slot_from]
+	object_from.inventory[slot_from] = object_to.inventory[slot_to]
+	object_to.inventory[slot_to] = _itemFrom
+
+}

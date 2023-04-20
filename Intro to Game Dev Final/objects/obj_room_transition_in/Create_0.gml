@@ -1,7 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-target_room = -1
-target_x = -1
-target_y = -1
-
-transition = false
+depth = -99999
+image_alpha = 1.5
