@@ -14,9 +14,9 @@
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Items","order":19,"path":"folders/Sprites/Items.yy",},
+    {"name":"player_sprite","order":21,"path":"folders/Sprites/player_sprite.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"player_sprite","order":21,"path":"folders/Sprites/player_sprite.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_mytextbox","order":5,"path":"sprites/spr_mytextbox/spr_mytextbox.yy",},
