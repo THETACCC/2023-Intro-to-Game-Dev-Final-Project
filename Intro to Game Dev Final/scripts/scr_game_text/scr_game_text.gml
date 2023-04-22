@@ -37,6 +37,30 @@ switch(_text_id){
 		scr_text("thanks!", "npc")
 
 		break
+		
+		case "letter":
+		
+		scr_text("What's inside the letter?", "player")
+
+		break
+		
+		case "store":
+	
+		scr_text("Who's there?", "shop_owner")
+		scr_text("Just a passerby. Sorry, didn't mean to interrupt you.", "player")
+		scr_text("Oh. No, ya're fine, just haven't seen an outsider in year....What drive you to this damn poor town? You looked...civilized.", "shop_owner")		
+		scr_text("I'm a, um, a writer. Someone invites me here to write about the town and the ZhouJia village. By the way, is there anything you could tell me about them? Anything could do fine for me now.", "player")	
+		scr_text("ZhouJia Village? God, so this is the reason ha? Hahahaha, yeah, I got plenty to say about them. But I don't let some random city girl question me like I'm some kind of fucking prisoner. Sorry, Big writer.", "shop_owner")
+		scr_text("He laughed scornfully, but his eyes still stare at me intensively. Maybe he just wants to ask me for a favor.")
+		scr_text("All right, so is there something I could do to earn those questions?", "player")	
+		scr_text("Humph. There's not much I need you to do. But if you really want to, find my old abacus and bring it here. Maybe I'll consider telling you sth.", "shop_owner")
+		scr_text("An old abacus...... I think I saw it somewhere in the town a while ago.", "player")		
+		
+		
+		
+		
+		break
+		
 }
 
 }

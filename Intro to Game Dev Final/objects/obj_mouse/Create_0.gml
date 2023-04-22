@@ -62,6 +62,15 @@ state_free = function()
 		
 	}
 		
+	//Open the object if it's interactable	
+	if (mouse_check_button_pressed(mb_right) && (slot_hover != -1) && (inventory_hover.inventory[slot_hover] != 1))
+	{
+		if inventory_hover.inventory[slot_hover] = 0
+		{
+		create_textbox("letter")
+		state = state_interact
+		}
+	}
 }
 
 
@@ -83,6 +92,20 @@ state_drag = function()
 		
 	}
 	
+	
+}
+
+
+state_interact = function()
+{
+	
+	if (!instance_exists(obj_mytextbox))
+	{
+	
+	state = state_free
+		
+	}
+
 	
 }
 

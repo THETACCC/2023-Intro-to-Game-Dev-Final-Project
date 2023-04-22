@@ -5,3 +5,5 @@ target_x = -1
 target_y = -1
 
 transition = false
+
+collision = false

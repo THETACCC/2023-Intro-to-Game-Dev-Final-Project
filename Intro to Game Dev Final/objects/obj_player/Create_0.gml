@@ -14,7 +14,7 @@ m_running = false
 
 m_grav = 0.98;
 m_maxhspeed = 2;
-m_maxhspeed_running = 5;
+m_maxhspeed_running = 4;
 m_maxvspeed = 30;
 m_jumppower = 25;
 m_isjump = false
@@ -49,4 +49,3 @@ onCollideY = function() {
 	m_vvel = 0
 }
 
-depth = -99

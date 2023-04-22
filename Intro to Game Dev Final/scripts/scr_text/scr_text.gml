@@ -94,7 +94,7 @@ if argument_count > 1 {
 	{
 		//players
 		case "player":
-			speaker_sprite[page_number] = spr_player_speak
+			speaker_sprite[page_number] = spr_player_talking
 			txtb_spr[page_number] = spr_mytextbox
 			speaker_side[page_number] = -1
 			snd[page_number] = snd_speak
@@ -110,6 +110,12 @@ if argument_count > 1 {
 
 		case "npc-anrgy":
 			speaker_sprite[page_number] = spr_npc2_speak_angry
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak				
+		break;
+		
+		case "shop_owner":
+			speaker_sprite[page_number] = spr_shop_owner
 			txtb_spr[page_number] = spr_mytextbox_npc
 			snd[page_number] = snd_npc_speak				
 		break;

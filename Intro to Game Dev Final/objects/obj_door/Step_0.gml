@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 if instance_place(x,y,obj_player) {
+
+	if (!instance_exists(obj_W))
+	{
+		
+	instance_create_layer(x,y-120, "Instances",obj_W)
+	
+	}
 	if keyboard_check_pressed(ord("W")) {
 	obj_room_transition_out.start_transition = true
 
@@ -15,4 +22,4 @@ if instance_place(x,y,obj_player) {
 	room_goto(target_room)
 	
 	}
-}
+} 

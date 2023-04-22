@@ -89,17 +89,17 @@ if (xinput > 0)  {
 	image_xscale = 1;
 }
 
-if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = false {
+if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = false and global.player_talking = false {
 
 	sprite_index = spr_player_walk
 	image_speed = m_xspeedup
 } else if (xinput = 0)  and m_grounded and abs(m_hvel) <= 1  {
 	sprite_index = spr_player_idle
 	image_speed = 1
-} else if  abs(xinput) > 0 and m_running and global.player_inventory = false {
+} else if  abs(xinput) > 0 and m_running and global.player_inventory = false and global.player_talking = false {
 	image_speed = m_xspeedup_run
 	sprite_index = spr_player_run
-}  else if global.player_inventory = true {
+}  else if global.player_inventory = true or global.player_talking = true {
 	sprite_index = spr_player_idle
 	image_speed = 1	
 }

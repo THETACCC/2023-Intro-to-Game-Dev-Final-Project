@@ -3,4 +3,4 @@ row_length = 10
 inventory = array_create(INVENTORY_SLOTS, -1)
 randomize()
 inventory[0] = 0
-inventory[1] = 0
+depth = -999

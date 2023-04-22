@@ -3,7 +3,7 @@
 accept_key = keyboard_check_pressed(ord("F"))
 
 textbox_x = camera_get_view_x(view_camera[0])
-textbox_y = camera_get_view_y(view_camera[0]) + 260
+textbox_y = camera_get_view_y(view_camera[0]) + 280
 
 
 //setup
@@ -125,7 +125,7 @@ if text_pause_timer <= 0 {
 	draw_char += text_spd
 	draw_char = clamp(draw_char, 0, text_length[page])
 	var _check_char = string_char_at(text[page],draw_char)	
-	if _check_char == "."
+	if _check_char == "." || _check_char == "," || _check_char == "?"
 		{
 		text_pause_timer = text_pause_time
 		if !audio_is_playing(snd[page]){
