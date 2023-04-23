@@ -5,7 +5,7 @@ if instance_place(x,y,obj_player) {
 	if (!instance_exists(obj_W))
 	{
 		
-	instance_create_layer(x,y-120, "Instances",obj_W)
+	instance_create_layer(obj_player.x,obj_player.y-70, "Instances",obj_W)
 	
 	}
 	if keyboard_check_pressed(ord("W")) {
