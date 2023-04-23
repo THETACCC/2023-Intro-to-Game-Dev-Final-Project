@@ -2,12 +2,15 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "obj_candle_light_puzzle",
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "puzzles",
+    "path": "folders/Objects/puzzles.yy",
   },
   "parentObjectId": null,
   "persistent": false,

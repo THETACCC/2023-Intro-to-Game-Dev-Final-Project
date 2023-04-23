@@ -9,12 +9,18 @@ if instance_place(x,y,obj_player) {
 	
 	}
 	if keyboard_check_pressed(ord("W")) {
+	obj_player.m_vvel = 0
+	obj_player.m_hvel = 0		
+	obj_player.image_index = spr_player_idle	
 	obj_room_transition_out.start_transition = true
 
 		
 	}
 
 	if transition = true {
+	obj_player.m_vvel = 0
+	obj_player.m_hvel = 0		
+	obj_player.image_index = spr_player_idle	
 	obj_player.x = target_x
 	obj_player.y = target_y
 	obj_camera.x = target_x

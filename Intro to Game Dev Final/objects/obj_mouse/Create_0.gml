@@ -7,6 +7,10 @@ slot_drag = -1
 item_drag = -1
 depth = -999
 
+//light_puzzle
+light_puzzle = -1
+
+
 mouse_over = function()
 {
 
@@ -41,6 +45,19 @@ mouse_over = function()
 		
 	}
 
+	if(instance_place(mouse_x,mouse_y,obj_candle_light_puzzle	))
+	{
+		
+	light_puzzle = 1	
+		
+	} else
+	{
+		
+	light_puzzle = -1		
+	}
+		
+	
+
 
 
 	
@@ -71,6 +88,16 @@ state_free = function()
 		state = state_interact
 		}
 	}
+	
+	//Drag the object if met the criteria
+	if (mouse_check_button(mb_left) && (light_puzzle = 1))
+	{
+		//enter drag state
+		state = state_drag_puzzle
+		
+	}
+	
+	
 }
 
 
@@ -106,6 +133,25 @@ state_interact = function()
 		
 	}
 
+	
+}
+
+state_drag_puzzle = function()
+{
+		mouse_over()
+		with(obj_candle_light_puzzle)
+		{
+			x = mouse_x
+			y = mouse_y
+			
+		}
+		
+		if (!mouse_check_button(mb_left))
+		{
+
+		state = state_free
+		
+		}
 	
 }
 

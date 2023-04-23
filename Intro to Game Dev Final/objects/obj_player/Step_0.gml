@@ -112,19 +112,23 @@ if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = f
 
 }
 
+
+
+m_previousgrounded = m_grounded
+
+
+
 //open inventory
-if keyboard_check_pressed(vk_tab) and global.player_inventory = false and global.player_talking = false	
+if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	
 {
 	m_hvel = 0
 	MoveX(0)
 	sprite_index = spr_player_idle	
 	global.player_inventory = true	
-} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true and global.player_talking = false		{
+} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true 	{
 	
 	global.player_inventory = false	
 }
-
-m_previousgrounded = m_grounded
 
 if keyboard_check_pressed(vk_down)
 {

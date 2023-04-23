@@ -10,7 +10,7 @@ room_main_interaction = false
 
 global.player_talking = false
 global.player_inventory = false
-
+global.store_interaction = false
 enum Gamestate {
 
 	Play,
@@ -21,8 +21,8 @@ enum Gamestate {
 }
 
 // Here are all the states
-state = Gamestate.Play
-state = Gamestate.in_puzzle
+global.state = Gamestate.Play
+global.state = Gamestate.in_puzzle
 
 // Here is the current state
-state = Gamestate.Play
+global.state = Gamestate.Play
