@@ -87,6 +87,16 @@ state_free = function()
 		create_textbox("letter")
 		state = state_interact
 		}
+		if inventory_hover.inventory[slot_hover] = 4
+		{
+				if !instance_exists(obj_player_light)
+				{
+				instance_create_layer(obj_player.x,obj_player.y, "light",obj_player_light)	
+				obj_player.candle_get = true
+				instance_create_layer(obj_player.x,obj_player.y, "objects",obj_candle_hold)				
+				}
+		}	
+		
 	}
 	
 	//Drag the object if met the criteria
@@ -118,8 +128,25 @@ state_drag = function()
 		
 		
 	}
-	
-	
+	show_debug_message(item_drag)
+	/*if 	item_drag = 3
+	{
+		with(item_drag)
+		{
+			if instance_place(x,y,obj_candle_light_puzzle)
+			{
+			instance_create_layer(x,y,"puzzle_2",obj_candle_light)	
+				state = state_free	
+			item_drag = -1
+			inventory_drag = -1
+			slot_drag = -1				
+			}
+			
+			
+		}
+		
+	}
+	*/
 }
 
 

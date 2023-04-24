@@ -49,3 +49,6 @@ scr_set_defaults_for_text()
 last_free_space = 0
 text_pause_timer = 0
 text_pause_time = 16
+
+x = 0
+y = 0

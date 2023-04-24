@@ -4,7 +4,7 @@
   "name": "spr_yuanzi_bg",
   "bbox_bottom": 359,
   "bbox_left": 0,
-  "bbox_right": 639,
+  "bbox_right": 808,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6d922e63-5208-420c-a1f9-65cc6383c845",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e2f48bda-4839-4d69-ad38-2874925d4272",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 360,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5b218879-0fc2-4c97-af47-38b003413795","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a545791d-cd26-43f5-851c-8fb7bd99dfc6","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6d922e63-5208-420c-a1f9-65cc6383c845","path":"sprites/spr_yuanzi_bg/spr_yuanzi_bg.yy",},},},"Disabled":false,"id":"19cdfd5d-65ec-43a4-9122-26963acd6ee0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e2f48bda-4839-4d69-ad38-2874925d4272","path":"sprites/spr_yuanzi_bg/spr_yuanzi_bg.yy",},},},"Disabled":false,"id":"6e1d829c-3a4a-4228-9287-c968eccbf791","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 640,
+  "width": 809,
 }

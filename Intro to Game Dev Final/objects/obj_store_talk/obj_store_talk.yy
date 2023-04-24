@@ -33,5 +33,5 @@
     "path": "sprites/spr_talk_range/spr_talk_range.yy",
   },
   "spriteMaskId": null,
-  "visible": false,
+  "visible": true,
 }

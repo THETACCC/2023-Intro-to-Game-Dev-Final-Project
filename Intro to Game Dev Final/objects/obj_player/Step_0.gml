@@ -90,18 +90,52 @@ if (xinput > 0)  {
 }
 
 if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = false and global.player_talking = false {
-
+	if candle_get = false
+	{
 	sprite_index = spr_player_walk
 	image_speed = m_xspeedup
+	} else
+	{
+	sprite_index = spr_player_hold_walk
+	image_speed = m_xspeedup		
+		
+	}
 } else if (xinput = 0)  and m_grounded and abs(m_hvel) <= 1  {
+	if candle_get = false
+	{	
 	sprite_index = spr_player_idle
 	image_speed = 1
+	}else
+	{
+	sprite_index = spr_player_hold_idle
+	image_speed = 1		
+		
+	}
+	
 } else if  abs(xinput) > 0 and m_running and global.player_inventory = false and global.player_talking = false {
+	if candle_get = false
+	{	
 	image_speed = m_xspeedup_run
 	sprite_index = spr_player_run
+	} else
+	{
+	image_speed = m_xspeedup_run
+	sprite_index = spr_player_hold_run		
+		
+		
+	}
 }  else if global.player_inventory = true or global.player_talking = true {
+	if candle_get = false
+	{		
 	sprite_index = spr_player_idle
 	image_speed = 1	
+	}else
+	{
+	sprite_index = spr_player_hold_idle
+	image_speed = 1			
+		
+		
+	}
 }
 
 

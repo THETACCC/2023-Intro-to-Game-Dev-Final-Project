@@ -2,6 +2,8 @@
 // You can write your code in this editor
 cam = view_camera[0]
 follow = obj_player
+change_follow = 0
+
 
 cam_width_half = camera_get_view_width(cam) * 0.5
 cam_height_half = camera_get_view_height(cam) * 0.5

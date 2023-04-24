@@ -113,10 +113,45 @@ switch(_text_id){
 		scr_text("You seem to hate people of Zhou a lot, could I know the reason for that?", "player")		
 		scr_text(".......", "shop_owner")			
 		scr_text("Good luck to you then. Young lady.", "shop_owner")			
-		scr_text("Please wait for a second! What else do you know about Zhou.....", "player")	
+			scr_option("Please wait for a second! What else do you know about Zhou", "An_Zhou_initial")
 		instance_destroy(obj_store_talk2)
+		instance_create_layer(395,240,"Instances",obj_An_Zhou)
 		break		
+		
+		case "An_Zhou_initial":
+		
+		scr_text("")	
 
+		obj_camera.change_follow = 1
+		
+
+		
+		
+		break
+		
+		case "An_Zhou_initial_2":
+		
+		scr_text("Who are you talking to?","An_Zhou")
+		scr_text("!!", "player")			
+			scr_option("What? Oh, I was just speaking to......", "An_Zhou_initial_3")			
+		break
+		
+		
+		case "An_Zhou_initial_3":
+		scr_text("")	
+
+		obj_camera.change_follow = 0		
+		
+		break
+		
+		case "An_Zhou_initial_4":
+		scr_text("......","player")
+		scr_text("Who are you talking to?","An_Zhou")		
+
+	
+		
+		break		
+		
 }
 
 }

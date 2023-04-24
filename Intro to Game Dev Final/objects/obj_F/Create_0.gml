@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
 image_alpha = 0
-speaking = false
-is_larged = false
+my_create = false
 image_speed = 0

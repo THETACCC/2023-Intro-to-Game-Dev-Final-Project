@@ -10,7 +10,7 @@ m_xspeedup = 1.1;
 m_xspeedup_run = 1.25
 m_running = false
 
-
+candle_get = false
 
 m_grav = 0.98;
 m_maxhspeed = 2;

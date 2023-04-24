@@ -9,6 +9,7 @@
   "instanceCreationOrder": [
     {"name":"inst_5A2BFE66_1","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_1572E4C_1","path":"rooms/rm_start/rm_start.yy",},
+    {"name":"inst_CC004B9","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_3B320718_1","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_1B5C421D_1","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_8C4F9FE_1","path":"rooms/rm_start/rm_start.yy",},
@@ -23,7 +24,6 @@
     {"name":"inst_1D643E9","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_8F2EB20","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_2F78B932","path":"rooms/rm_start/rm_start.yy",},
-    {"name":"inst_CC004B9","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_5E91B85D","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_65F1A1DD","path":"rooms/rm_start/rm_start.yy",},
     {"name":"inst_30F5F2A9","path":"rooms/rm_start/rm_start.yy",},

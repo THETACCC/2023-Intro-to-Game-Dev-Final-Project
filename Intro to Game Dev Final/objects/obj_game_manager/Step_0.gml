@@ -15,7 +15,7 @@ switch(global.state)
 		global.player_talking = false
 	}
 	if room = rm_main and global.store_interaction = false {
-	instance_create_layer( 256,256 , "interactions",obj_store_talk)	
+	instance_create_layer( 960,256 , "interactions",obj_store_talk)	
 
 	}
 	

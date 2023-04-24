@@ -4,8 +4,8 @@
   "name": "spr_yuanzi_front",
   "bbox_bottom": 359,
   "bbox_left": 0,
-  "bbox_right": 639,
-  "bbox_top": 0,
+  "bbox_right": 808,
+  "bbox_top": 190,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"64e44be1-a762-4fe3-a989-79a0aaf32c4f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f13cf94f-b024-4ac4-99a8-6528da6f8651",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 360,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d0566493-a5e8-4b64-ba1a-26b937fff440","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5d0e4a1c-fde1-40cb-b8f6-bedc1e3b4701","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"64e44be1-a762-4fe3-a989-79a0aaf32c4f","path":"sprites/spr_yuanzi_front/spr_yuanzi_front.yy",},},},"Disabled":false,"id":"95391707-05d3-41e7-a420-bce87be7e3ea","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"f13cf94f-b024-4ac4-99a8-6528da6f8651","path":"sprites/spr_yuanzi_front/spr_yuanzi_front.yy",},},},"Disabled":false,"id":"e29d3775-05aa-4eda-8bdf-2ed82e50a53d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 640,
+  "width": 809,
 }
