@@ -1,3 +1,3 @@
-target_room = rm_yuanzi
+target_room = rm_1f_passway
 target_x = 32
 target_y = 240
