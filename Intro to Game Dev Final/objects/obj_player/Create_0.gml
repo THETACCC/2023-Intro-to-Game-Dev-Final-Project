@@ -37,6 +37,9 @@ m_position_y = y
 //Collisions
 
 onCollideX = function() {
+	
+
+			
 	m_hvel = 0
 }
 

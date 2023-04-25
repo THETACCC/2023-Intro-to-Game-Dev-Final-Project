@@ -12,7 +12,7 @@ switch(global.state)
 		global.state = Gamestate.scene	
 		global.player_talking = true
 		obj_player.sprite_index = spr_player_idle					
-			
+		global.player_inventory = false 	
 			
 		}else{
 		obj_player.m_vvel = 0
@@ -20,7 +20,7 @@ switch(global.state)
 		global.state = Gamestate.talking		
 		global.player_talking = true
 		obj_player.sprite_index = spr_player_idle		
-			
+		global.player_inventory = false 			
 			
 			
 		}
@@ -49,7 +49,10 @@ switch(global.state)
 	obj_player.m_vvel = 0
 	obj_player.m_hvel = 0		
 	global.player_talking = true	
-	
+	if instance_exists(obj_F_talking)
+	{
+	instance_destroy(obj_F_talking)
+	}	
 	if keyboard_check_pressed(vk_escape)
 	{
 	global.player_talking = false		
@@ -65,7 +68,10 @@ switch(global.state)
 	
 	if !(instance_exists(obj_mytextbox) or !(instance_exists(obj_inventory)) )
 	{
-	
+	if instance_exists(obj_F_talking)
+	{
+	instance_destroy(obj_F_talking)
+	}
 	global.player_talking = false
 	global.state = Gamestate.Play
 	}
@@ -75,7 +81,10 @@ switch(global.state)
 	case Gamestate.scene:	
 	if room = rm_yuanzi 
 	{
-	
+	if instance_exists(obj_F_talking)
+	{
+	instance_destroy(obj_F_talking)
+	}	
 	global.player_talking = false
 	global.state = Gamestate.Play
 	}	

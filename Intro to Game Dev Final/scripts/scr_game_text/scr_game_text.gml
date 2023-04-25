@@ -38,9 +38,27 @@ switch(_text_id){
 
 		break
 		
-		case "letter":
+		case"start_screen_speech_letter":
+		scr_text("I should check on the letter first.", "player")	
 		
-		scr_text("What's inside the letter?", "player")
+		break
+		
+		case"start_screen_speech":
+		scr_text("The village is probably on the right.", "player")		
+		break
+		
+		case"find_item":
+		scr_text("There's no need to head back now. I surely saw that abacus around here.", "player")		
+		break	
+		
+		case "letter":
+		instance_destroy(obj_invisible_wall)
+		scr_text("Lets see...", "player")
+		scr_text("This letter were sent to chief editor Zhao last month by the village leader named Mo Zhou,")
+		scr_text("inviting us to come over and research the old village to conserve their traditional culture.")	
+		scr_text("However, he mentioned that only 1 researcher could go inside the village. ")	
+		scr_text("So, I recommend myself there. ")		
+		scr_text("Chief editor Zhao knows me well enough, I have a unique passion towards ancient villages like this. ")				
 		scr_text("According to the letter, the contact will be waiting for me at the gate to the mountain. I should go into that town to ask for directions, and maybe also collect some info about the Zhoujia Village.", "player")
 		break
 		
@@ -49,16 +67,20 @@ switch(_text_id){
 		scr_text("Who's there?", "shop_owner")
 		scr_text("!!", "player")		
 		scr_text("Just a passerby. Sorry, didn't mean to interrupt you.", "player")
-		scr_text("Oh. No, ya're fine, just haven't seen an outsider in year....What drive you to this damn poor town? You looked...civilized.", "shop_owner")		
-		scr_text("I'm a, um, a writer. Someone invites me here to write about the town and the ZhouJia village. By the way, is there anything you could tell me about them? Anything could do fine for me now.", "player")	
-		scr_text("ZhouJia Village? God, so this is the reason ha? Hahahaha, yeah, I got plenty to say about them. But I don't let some random city girl question me like I'm some kind of fucking prisoner. Sorry, Big writer.", "shop_owner")
+		scr_text("Oh. No, ya're fine, just haven't seen an outsider in year....", "shop_owner")		
+		scr_text("What drive you to this damn poor town? You looked...civilized.", "shop_owner")		
+		scr_text("I'm a, um, a writer. Someone invites me here to write about the town and the ZhouJia village.", "player")
+		scr_text("By the way, is there anything you could tell me about them? Anything could do fine for me now.", "player")	
+		scr_text("ZhouJia Village? God, so this is the reason ha? Hahahaha, yeah, I got plenty to say about them. ", "shop_owner")
+		scr_text("But I don't let some random city girl question me like I'm some kind of fucking prisoner. Sorry, Big writer.", "shop_owner")			
 		scr_text("He laughed scornfully, but his eyes still stare at me intensively. Maybe he just wants to ask me for a favor.")
 		scr_text("All right, so is there something I could do to earn those questions?", "player")	
 		scr_text("Humph. There's not much I need you to do. But if you really want to, find my old abacus and bring it here. Maybe I'll consider telling you sth.", "shop_owner")
 			scr_text_color(81,87, c_orange,c_orange,c_orange,c_orange)
 		scr_text("An old abacus...... I think I saw it somewhere in the town a while ago.", "player")	
 			scr_text_color(7,12, c_orange,c_orange,c_orange,c_orange)		
-		instance_destroy(obj_store_talk)		
+		instance_destroy(obj_store_talk)	
+		instance_activate_object(obj_invisible_wall)		
 		break
 		
 		case "start":
@@ -73,7 +95,7 @@ switch(_text_id){
 		scr_text("That Cat feels familiar to me, why?", "player")	
 		scr_text("Meow~")			
 				scr_option("(I MUST CATCH IT!)" , "Cat-1")		
-		
+		instance_deactivate_object(obj_invisible_wall)		
 		instance_destroy(obj_cat_initial)		
 		break
 		
@@ -104,13 +126,16 @@ switch(_text_id){
 		
 		case "shop_owner_question1-1":
 		scr_text("As I said, this is a small town. Back ten years ago, we could still sell out some vegetables and livestock to the county town and make living out of it. ", "shop_owner")		
-		scr_text("Now people could barely earn much money from that, big companies in the city outwon us. Younger ones went to the city in search of ways to survive, leaving old folk like us to rot and die in this poor town. ", "shop_owner")			
+		scr_text("Now people could barely earn much money from that, big companies in the city outwon us. ", "shop_owner")			
+		scr_text("Younger ones went to the city in search of ways to survive, leaving old folk like us to rot and die in this poor town. ", "shop_owner")		
 				scr_option("How is Zhoujia village's trading recently?" , "shop_owner_question2-2")	
 		break
 		
 		case "shop_owner_question2-1":
 		scr_text("Haha, those people of Zhou. Selfish, gloomy bastard. How's their trade? Their trades were all screwed! ", "shop_owner")	
-		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain. So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")			
+		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain. ", "shop_owner")		
+		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")	
+				scr_text_shake(0,79)			
 		scr_text("When they are in their heyday, they never let anyone enter that mountain, anyone outside of the people of Zhou!", "shop_owner")
 		scr_text("Well now you see, they don’t even need a guard anymore. Because no one value their ‘family secret’ now! Only a writer would be interested, ha! How funny! ", "shop_owner")	
 				scr_option("Where are those villagers?" , "shop_owner_question1-2")			
@@ -118,16 +143,19 @@ switch(_text_id){
 		
 		case "shop_owner_question1-2":
 		scr_text("As I said, this is a small town. Back ten years ago, we could still sell out some vegetables and livestock to the county town and make living out of it. ", "shop_owner")		
-		scr_text("Now people could barely earn much money from that, big companies in the city outwon us. Younger ones went to the city in search of ways to survive, leaving old folk like us to rot and die in this poor town. ", "shop_owner")	
+		scr_text("Now people could barely earn much money from that, big companies in the city outwon us. ", "shop_owner")			
+		scr_text("Younger ones went to the city in search of ways to survive, leaving old folk like us to rot and die in this poor town. ", "shop_owner")	
 				scr_option("Thank you for telling me." , "shop_owner_question3")				
 		break			
 		
 		
 		case "shop_owner_question2-2":
 		scr_text("Haha, those people of Zhou. Selfish, gloomy bastard. How's their trade? Their trades were all screwed! ", "shop_owner")	
-		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain. So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")			
+		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain.", "shop_owner")		
+		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")	
+				scr_text_shake(0,79)	
 		scr_text("When they are in their heyday, they never let anyone enter that mountain, anyone outside of the people of Zhou!", "shop_owner")
-		scr_text("Well now you see, they don’t even need a guard anymore. Because no one value their ‘family secret’ now! Only a writer would be interested, ha! How funny! ", "shop_owner")			
+		scr_text("Well now you see, they don't even need a guard anymore. Because no one value their 'family secret' now! Only a writer would be interested, ha! How funny! ", "shop_owner")			
 				scr_option("Thank you for telling me." , "shop_owner_question3")			
 		
 		break		
@@ -152,7 +180,7 @@ switch(_text_id){
 		scr_text("")	
 		obj_store.fade_away = true
 		obj_camera.change_follow = 1
-		
+		global.state = Gamestate.scene		
 
 		
 		

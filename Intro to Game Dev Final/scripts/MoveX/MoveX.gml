@@ -9,15 +9,32 @@ function MoveX(amount)
 		
 		while(move != 0)
 		{
-			if (!place_meeting(x + mySign, y, obj_solid))
+			if (!place_meeting(x + mySign, y, obj_solid) and (!place_meeting(x + mySign, y, obj_invisible_wall) ))
 			{
 				x += mySign;
 				move -= mySign;
 			}
 			else
 			{
+				if(keyboard_check(ord("A")) and !keyboard_check(ord("D")))
+				{
+						if 	place_meeting(x -16, y, obj_invisible_wall)	
+						{
+									obj_invisible_wall.collision = true	
+						}
+				}else if (keyboard_check(ord("D")) and !keyboard_check(ord("A")))
+				{
+						if 	place_meeting(x +16, y, obj_invisible_wall)	
+						{
+									obj_invisible_wall.collision = true	
+						}					
+					
+					
+				}
+
 				//hit something!
 				onCollideX()
+
 				break;
 			}
 		}

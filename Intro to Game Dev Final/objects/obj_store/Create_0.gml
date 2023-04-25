@@ -4,3 +4,4 @@ image_alpha = 0
 
 found_player = false
 fade_away = false
+shaked = false

@@ -202,6 +202,7 @@ if accept_key
 }
 
 
+//draw the UI for guide
 
 
 
@@ -223,10 +224,29 @@ if speaker_sprite[page] != noone {
 	//draw the speaker
 	//draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, 80/txtb_spr_w, 80/txtb_spr_h, 0, c_white,1)
 	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1)
-}
+
+}  
+
+if !instance_exists(obj_F_talking)
+	{
+	
+		
+	instance_create_depth(textbox_x + 315,textbox_y + 63, -100,obj_F_talking)	
+	
+	}	
+else if instance_exists(obj_F_talking)
+	{
+		obj_F_talking.x = textbox_x + 315
+		
+	}
+	
+
+
+
 
 //back of the box
 draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1)
+
 
 
 // options
@@ -253,7 +273,7 @@ if draw_char == text_length[page] && page == page_number - 1
 	//the arrow
 	if option_pos == op
 	{
-		draw_sprite_ext(spr_arrow, 0, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op,1,1,0,c_white,1)
+		draw_sprite_ext(spr_arrow, 1, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op,1,1,0,c_white,1)
 
 	}
 	

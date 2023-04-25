@@ -97,15 +97,34 @@ m_previousgrounded = m_grounded
 
 
 //open inventory
-if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	
+if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	and global.state = Gamestate.Play 	and !instance_exists(obj_mytextbox)
 {
 	m_hvel = 0
 	MoveX(0)
 	sprite_index = spr_player_idle	
 	global.player_inventory = true	
+	if !instance_exists(obj_inventory_open)
+	{
+		instance_create_depth(0,0,-99,obj_inventory_open)
+			obj_inventory_open.appear = true
+	}
+
 } else if keyboard_check_pressed(vk_tab) and global.player_inventory = true 	{
 	
 	global.player_inventory = false	
+	if instance_exists(obj_inventory_open)
+	{
+
+			obj_inventory_open.appear = false
+	}	
+} else if instance_exists(obj_mytextbox){
+	
+	global.player_inventory = false		
+	if instance_exists(obj_inventory_open)
+	{
+
+			obj_inventory_open.appear = false
+	}		
 }
 
 if keyboard_check_pressed(vk_down)

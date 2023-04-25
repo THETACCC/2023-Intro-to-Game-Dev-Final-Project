@@ -84,7 +84,12 @@ state_free = function()
 	{
 		if inventory_hover.inventory[slot_hover] = 0
 		{
+		if instance_exists(obj_mytextbox) {
+		instance_destroy(obj_mytextbox)	
+				create_textbox("letter")
+		} else {
 		create_textbox("letter")
+		}
 		state = state_interact
 		}
 		if inventory_hover.inventory[slot_hover] = 4

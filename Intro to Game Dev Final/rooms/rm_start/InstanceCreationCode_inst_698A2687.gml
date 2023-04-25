@@ -1,0 +1,1 @@
+target_speech = "start_screen_speech_letter"
