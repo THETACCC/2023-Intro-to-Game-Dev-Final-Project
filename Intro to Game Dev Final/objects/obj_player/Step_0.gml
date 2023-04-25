@@ -6,7 +6,7 @@ var vaccel = 0;
 var xinput = 0;
 var yinput = 0;
 
-if global.player_talking = false and global.player_inventory = false {
+if global.player_talking = false and global.player_inventory = false and global.state = Gamestate.Play{
 
 
 

@@ -10,6 +10,8 @@ if instance_place(x,y,obj_candle_light_puzzle)
 	 scr_inventory_add(obj_inventory,4)	
 	global.player_talking = false	 
 	global.state = Gamestate.Play	
+	obj_kitchen_vines.appear = true
+	instance_destroy(obj_candle_interact)
 	}
 }else{
 

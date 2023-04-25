@@ -6,8 +6,13 @@ accept_key = keyboard_check_pressed(ord("F"))
 if obj_camera.change_follow = 1 {
 textbox_x = camera_get_view_x(view_camera[0])
 textbox_y = camera_get_view_y(view_camera[0]) + 280
-} else if  obj_camera.change_follow = 0{
+} else if  obj_camera.change_follow = 0 and room != rm_yuanzi and room != rm_start{
 textbox_x = obj_player.x - 320
+textbox_y = camera_get_view_y(view_camera[0]) + 280	
+	
+} else {
+	
+textbox_x = camera_get_view_x(view_camera[0])
 textbox_y = camera_get_view_y(view_camera[0]) + 280	
 	
 }
@@ -242,13 +247,14 @@ if draw_char == text_length[page] && page == page_number - 1
 	{
 	// the option box
 	var _o_width = string_width(option[op]) + _op_bord*2
-	draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x + 16, _txtb_y - _op_space*option_number + _op_space*op, _o_width/txtb_spr_w, (_op_space-16)/txtb_spr_h, 0 , c_white, 1)
+	draw_sprite_ext(spr_options, txtb_img, _txtb_x + 16, _txtb_y - _op_space*option_number + _op_space*op, _o_width/txtb_spr_w, (_op_space-16)/txtb_spr_h, 0 , c_white, 1)
 	
 	
 	//the arrow
 	if option_pos == op
 	{
-		draw_sprite(spr_arrow, 0, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op)
+		draw_sprite_ext(spr_arrow, 0, _txtb_x, _txtb_y - _op_space*option_number + _op_space*op,1,1,0,c_white,1)
+
 	}
 	
 	//the option text

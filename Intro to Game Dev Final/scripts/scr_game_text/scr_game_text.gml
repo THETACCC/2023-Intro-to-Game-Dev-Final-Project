@@ -194,7 +194,28 @@ switch(_text_id){
 		
 		break
 		
+		case "garden_An_Zhou_1":		
+		instance_destroy(obj_garden_An_Zhou)		
+		obj_An_Zhou.image_xscale = -1
+		obj_player.image_xscale = -1		
+		scr_text("Here we all. Welcome to ZhouJia Village! Sorry for the long climb though, I hope those stairs didn't exhaust you.","An_Zhou")
+		scr_text("(Breathing heavily) I'm ok, just need a moment to rest.","player")
+		scr_text("His smile hasn't changed a bit since we just met hours ago. It's hard to see through his real emotion.")		
+		scr_text("Great. You are now in one of our main buildings in the village, our leader reserves this just for you to rest. ","An_Zhou")		
+		scr_text("Speaking of this, he should have been in the garden already, waiting for you. But I don't see him here......hmm, how weird. ","An_Zhou")	
+		scr_text("Maybe you could go look for him. I'll take care of myself here.","player")
+		scr_text("(Sign) Alright, I'll get the leader back soon. I'm sure you could look after yourself, but let me remind you a bit.","An_Zhou")
+		scr_text("Please try your best staying in the garden. Our traditional ceremony is coming, and people are decorating all houses in the village.","An_Zhou")
+		scr_text("Unfortunately, the decorating process for this building is not done yet. We don't want to ruin those surprises for you.","An_Zhou")		
+			scr_option("Ok. I'll just take a look around here.", "garden_An_Zhou_Leave")		
+
+		break	
 		
+		case "garden_An_Zhou_Leave":	
+		scr_text("An Zhou leaves the garden...")		
+		obj_An_Zhou.conversation_end = true	
+		obj_An_Zhou.image_xscale = 1		
+		break			
 }
 
 }

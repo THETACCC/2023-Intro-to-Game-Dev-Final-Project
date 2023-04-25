@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cat",
-    "path": "sprites/spr_cat/spr_cat.yy",
+    "name": "spr_cat_idle",
+    "path": "sprites/spr_cat_idle/spr_cat_idle.yy",
   },
   "spriteMaskId": null,
   "visible": true,

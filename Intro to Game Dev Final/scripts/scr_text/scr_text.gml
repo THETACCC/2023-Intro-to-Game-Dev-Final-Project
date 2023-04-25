@@ -139,7 +139,7 @@ if argument_count > 1 {
 		break;
 		
 		case "cat":
-			speaker_sprite[page_number] = spr_cat
+			speaker_sprite[page_number] = spr_cat_idle
 			txtb_spr[page_number] = spr_mytextbox_npc
 			snd[page_number] = snd_npc_speak				
 		break;

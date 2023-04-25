@@ -10,7 +10,7 @@ obj_player.image_index = spr_player_idle
 }
 if image_alpha >=  1
 {
-	
+	instance_destroy(obj_An_Zhou)
 	obj_player.m_vvel = 0
 	obj_player.m_hvel = 0		
 	obj_player.image_index = spr_player_idle	

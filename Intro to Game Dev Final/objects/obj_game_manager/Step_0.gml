@@ -5,11 +5,26 @@ switch(global.state)
 {
 	case Gamestate.Play:
 	if instance_exists(obj_mytextbox) {
+		if instance_exists(obj_An_Zhou) and room = rm_main
+		{
+		obj_player.m_vvel = 0
+		obj_player.m_hvel = 0	
+		global.state = Gamestate.scene	
+		global.player_talking = true
+		obj_player.sprite_index = spr_player_idle					
+			
+			
+		}else{
 		obj_player.m_vvel = 0
 		obj_player.m_hvel = 0	
 		global.state = Gamestate.talking		
 		global.player_talking = true
-		obj_player.sprite_index = spr_player_idle	
+		obj_player.sprite_index = spr_player_idle		
+			
+			
+			
+		}
+
 
 	} 
 	if room = rm_main and global.store_interaction = false {
@@ -24,7 +39,10 @@ switch(global.state)
 	instance_create_layer( 380,256 , "interactions",obj_cat_initial)	
 
 	}
-	
+	if room = rm_yuanzi and global.garden_interaction_1 = false {
+	instance_create_layer( 90,256 , "interactions",obj_garden_An_Zhou)	
+
+	}
 	break
 	
 	case Gamestate.in_puzzle:
@@ -52,8 +70,17 @@ switch(global.state)
 	global.state = Gamestate.Play
 	}
 	
-	break	
+	break
 	
+	case Gamestate.scene:	
+	if room = rm_yuanzi 
+	{
+	
+	global.player_talking = false
+	global.state = Gamestate.Play
+	}	
+	
+	break	
 	default:
 	// use this to debug	
 	
