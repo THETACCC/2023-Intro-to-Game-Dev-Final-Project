@@ -133,11 +133,16 @@ if argument_count > 1 {
 		break;
 		
 		case "An_Zhou":
-			speaker_sprite[page_number] = spr_shop_owner
+			speaker_sprite[page_number] = spr_An_Zhou_talking
 			txtb_spr[page_number] = spr_mytextbox_npc
 			snd[page_number] = snd_npc_speak				
 		break;
-
+		
+		case "cat":
+			speaker_sprite[page_number] = spr_cat
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak				
+		break;
 
 	}
 

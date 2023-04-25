@@ -93,8 +93,10 @@ state_free = function()
 				{
 				instance_create_layer(obj_player.x,obj_player.y, "light",obj_player_light)	
 				obj_player.candle_get = true
-				instance_create_layer(obj_player.x,obj_player.y, "objects",obj_candle_hold)				
+				instance_create_layer(obj_player.x,obj_player.y, "objects",obj_candle_hold)		
+
 				}
+				obj_player.image_index = spr_player_hold_idle		
 		}	
 		
 	}

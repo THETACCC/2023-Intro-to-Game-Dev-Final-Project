@@ -16,7 +16,23 @@ if obj_camera.change_follow = 0 && (obj_camera.x = obj_camera.xprevious ) && con
 		{
 		create_textbox("An_Zhou_initial_4")
 		conversation_1 = false	
-		move_towards_point(obj_An_Zhou_position.x,y,2)
+		conversation_end = true	
 		}
 	
 }
+
+if x >= obj_An_Zhou_position.x
+{
+	
+		speed = 0
+		start_moving = false
+} else{
+			
+		start_moving = true		
+}
+if start_moving = true 	and	conversation_end = true	 {
+		
+move_towards_point(obj_An_Zhou_position.x,y,2)
+} 
+
+		

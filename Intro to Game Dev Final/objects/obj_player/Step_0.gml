@@ -1,13 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if global.player_talking = false and global.player_inventory = false {
-
 var haccel = 0;
 var vaccel = 0;
 //get keyboard input and save it into a local variable
 var xinput = 0;
 var yinput = 0;
+
+if global.player_talking = false and global.player_inventory = false {
+
+
 
 if (keyboard_check(ord("A")) and !keyboard_check(ord("D"))) and global.player_talking = false  {
 
@@ -80,8 +81,44 @@ if ( yinput == -1 && m_grounded) {
 m_vvel = clamp(m_vvel,-m_maxvspeed, m_maxvspeed);
 MoveY(m_vvel);
 
-
 //change the sprite direction based on our input
+
+
+
+
+
+
+}
+
+
+
+m_previousgrounded = m_grounded
+
+
+
+//open inventory
+if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	
+{
+	m_hvel = 0
+	MoveX(0)
+	sprite_index = spr_player_idle	
+	global.player_inventory = true	
+} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true 	{
+	
+	global.player_inventory = false	
+}
+
+if keyboard_check_pressed(vk_down)
+{
+show_debug_message(scr_inventory_search(obj_inventory,2) != -1)
+}
+
+
+if global.state = Gamestate.Play{
+	
+
+	
+	
 if (xinput > 0)  {
 	image_xscale = -1;
 
@@ -138,33 +175,11 @@ if abs(xinput) > 0 and m_grounded and !m_running and global.player_inventory = f
 	}
 }
 
-
-
-
-
-
-
 }
 
 
-
-m_previousgrounded = m_grounded
-
-
-
-//open inventory
-if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	
+if instance_exists(obj_player_light) and global.state = Gamestate.talking
 {
-	m_hvel = 0
-	MoveX(0)
-	sprite_index = spr_player_idle	
-	global.player_inventory = true	
-} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true 	{
-	
-	global.player_inventory = false	
-}
-
-if keyboard_check_pressed(vk_down)
-{
-show_debug_message(scr_inventory_search(obj_inventory,2) != -1)
+		sprite_index = spr_player_hold_idle
+		image_speed = 1		
 }

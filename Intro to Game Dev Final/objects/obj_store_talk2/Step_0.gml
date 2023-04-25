@@ -9,6 +9,7 @@ if instance_place (x,y, obj_player) && keyboard_check(ord("F")) && !instance_exi
 
 		if scr_inventory_search(obj_inventory,2) != -1
 		{
+		scr_inventory_remove(obj_inventory,2)			
 		instance_destroy(self)
 		instance_destroy(obj_F)
 		}
@@ -22,7 +23,7 @@ if instance_place(x,y,obj_player) && !keyboard_check(ord("F")) && !instance_exis
 	if (!instance_exists(obj_F))
 	{
 		
-	instance_create_layer(obj_player.x,obj_player.y-70, "Instances",obj_F)
+	instance_create_layer(obj_player.x,obj_player.y-70, "UI",obj_F)
 	obj_F.my_create = true
 	}
 }	else if !instance_place(x,y,obj_player)
