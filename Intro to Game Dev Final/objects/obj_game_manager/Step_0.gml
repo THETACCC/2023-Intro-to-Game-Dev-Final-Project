@@ -45,7 +45,7 @@ switch(global.state)
 	
 	case Gamestate.talking:
 	
-	if !(instance_exists(obj_mytextbox))
+	if !(instance_exists(obj_mytextbox) or !(instance_exists(obj_inventory)) )
 	{
 	
 	global.player_talking = false
