@@ -47,6 +47,7 @@ switch(global.state)
 	instance_create_layer( 32,256 , "interactions",obj_kitchen_initial)	
 
 	}
+
 	break
 	
 	case Gamestate.in_puzzle:

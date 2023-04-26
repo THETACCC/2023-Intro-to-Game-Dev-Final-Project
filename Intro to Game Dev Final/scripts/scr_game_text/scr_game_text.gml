@@ -211,7 +211,7 @@ switch(_text_id){
 		scr_text("No. No one. I just have the habit of talking to myself. Um, sorry, who are you?","player")		
 		scr_text("Oh! Forgive me for the rudeness, my name is Zhou An. You must be the writer we've contacted, right? We don't get to see lots of new faces here.","An_Zhou")	
 		scr_text("Ah, that may be my chief editor, Zhao, he sends me here with this letter.","player")
-		scr_text("Yeah sure, we know he will always send someone reliable like you here. Let’s hurry to the village, shall we? You must have come a long way.","An_Zhou")	
+		scr_text("Yeah sure, we know he will always send someone reliable like you here. Let's hurry to the village, shall we? You must have come a long way.","An_Zhou")	
 			scr_option("Sure", "An_Zhou_initial_5")		
 		
 		obj_player.image_xscale = 1
@@ -287,7 +287,12 @@ switch(_text_id){
 		case"need_light":
 		scr_text("Why is this place so dark? I need to get a light source", "player")			
 		
-		break			
+		break		
+		
+		case"picture":
+		scr_text("Look at this...", "player")			
+		scr_text("Look at this.1..", "player")					
+		break
 }
 
 }
