@@ -9,6 +9,22 @@ if instance_place (x,y, obj_player) && keyboard_check(ord("F")) && !instance_exi
 		create_textbox(text_id)
 		check_time = check_timer
 		global.picture_interaction = true
+		instance_create_layer(220,50,"puzzle_2",obj_picture)
+				if instance_exists(obj_picture)
+				{
+					
+				obj_picture.appear = true
+				
+				}	
+		obj_black_screen_tree.appear = true			
+		if !instance_exists(obj_door)
+		{
+		instance_create_layer(32,240,"Interactions",obj_door)	
+		obj_door.target_room = 	rm_1f_passway_after_kitchen
+		obj_door.target_x = 1427
+		obj_door.target_y= 240		
+		}
+		obj_kitchen_vines.appear = false 		
 		instance_destroy(self)
 	}
 

@@ -144,6 +144,12 @@ if argument_count > 1 {
 			snd[page_number] = snd_npc_speak				
 		break;
 
+		case "Cheif":
+			speaker_sprite[page_number] = spr_chief_talking
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak				
+		break;
+
 	}
 
 	

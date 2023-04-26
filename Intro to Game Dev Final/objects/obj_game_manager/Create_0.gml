@@ -16,6 +16,8 @@ global.cat_interaction_1 = false
 global.garden_interaction_1 = false
 global.kitchen_interaction = false
 global.picture_interaction = false
+global.after_kitchen = false
+global.cheif_initial = false
 enum Gamestate {
 
 	Play,

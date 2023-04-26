@@ -6,7 +6,7 @@ accept_key = keyboard_check_pressed(ord("F"))
 if obj_camera.change_follow = 1 {
 textbox_x = camera_get_view_x(view_camera[0])
 textbox_y = camera_get_view_y(view_camera[0]) + 280
-} else if  obj_camera.change_follow = 0 and room != rm_yuanzi and room != rm_start and room != rm_kitchen{
+} else if  obj_camera.change_follow = 0 and room != rm_yuanzi and room != rm_start and room != rm_kitchen and room != rm_yuanzi_after_kitchen{
 textbox_x = obj_player.x - 320
 textbox_y = camera_get_view_y(view_camera[0]) + 280	
 	

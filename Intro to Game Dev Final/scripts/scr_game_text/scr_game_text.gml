@@ -290,9 +290,149 @@ switch(_text_id){
 		break		
 		
 		case"picture":
-		scr_text("Look at this...", "player")			
-		scr_text("Look at this.1..", "player")					
+		scr_text("An old photo of a woman holds a girl in her hand, they seems to be happy.")			
+		scr_text("But the woman’s eyes were scratched with black stains. " )
+		scr_text("There are some words in the bottom right corner of the photo: My dearest love. By Cheng Zhou. 1998.X.X " )		
+			scr_option("...", "picture_done")				
 		break
+		
+		case"picture_done":
+		scr_text("...", "player")		
+		scr_text("Those vines... are gone?", "player")	
+				if instance_exists(obj_picture)
+				{
+					
+				obj_picture.appear = false
+				
+				}				
+				obj_black_screen_tree.appear = false	
+		break
+		
+		
+		case"kitchen_without_light":
+		scr_text("It's too dark over there", "player")	
+		
+		break	
+		
+		case"find_light":
+		scr_text("")	
+		scr_text("Are these vines supposed to be here?", "player")		
+		scr_text("....", "player")
+		scr_text("Maybe it's just too dark that I didn't see", "player")				
+		scr_text("Press TAB to open backpack. Use RIGHT CLICK to turn on the light.")	
+			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
+			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
+		break		
+		
+		
+		
+		case"after_kitchen":
+		scr_text("This place is weird, I shoiuld probably head out", "player")			
+		break
+		
+		
+		case"cheif_initial":
+		scr_text("Miss, Why are you here? We've been looking for you, and I told you to stay in the garden," , "An_Zhou")
+		scr_text("guess my suggestion really doesn't mean much to you.",  "An_Zhou")	
+				scr_text_shake(0,52)		
+		scr_text("No, I don't mean to.. I see a cat entering the door so I follow it through. Sorry, I never meant to keep you guys worried.", "player")
+		scr_text("Oh no no no, don't blame yourself for this.",  "Cheif")	
+		scr_text("None of this is supposed to happen today if I wasn't delayed by the village business. You have my apology, Miss Zhang.",  "Cheif")	
+		scr_text("So he must be the leader AnZhou kept mentioning about. He seems to know my name, maybe he's the one who contacted chief editor Zhao and scheduled this visit.")
+		scr_text(" (Sigh) Leader, we should get going, should we show our visitor her room now?",  "An_Zhou")			
+		scr_text("An, let's not hurry Miss Zhang. She seemed quite active and curious. It would be impolite if we ignore our visitor's needs.",  "Cheif")		
+		scr_text("So, is there anything about the village you'd like me to briefly talk you through now? Miss Zhang?",  "Cheif")		
+			scr_option("Could you give me an overview of the village's history?", "village_history_1_1")
+			scr_option("How's the village doing recently?", "village_recent_2_1")				
+		break
+		
+		case"village_history_1_1":
+		scr_text("Gladly! You see, ZhouJia village has a long history. Our ancestors found this beautiful mountain and constructed the home we live in now.",  "Cheif")	
+		scr_text("The virtue of hardworking and faithfulness was passed on from our generation to generation. ",  "Cheif")			
+		scr_text("We grow tea trees for a living and the god of the mountain always blesses us with its power.  ",  "Cheif")					
+		scr_text("Our tea was welcomed by everyone, they have the best quality and smells that no one could resist.   ",  "Cheif")			
+		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
+		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
+			scr_text_shake(0,92)		
+		scr_text(" Leader...",  "An_Zhou")			
+		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
+			scr_option("How's the village doing recently?", "village_recent_1_2")	
+
+		break	
+		
+		case"village_recent_1_2":
+		scr_text("Well, you must have read the letter. Things are heading in a bad direction, our tea trees were never like the old time now.",  "Cheif")			
+		scr_text("they grow slowly, and the quality dropped continuously. ",  "Cheif")			
+		scr_text("Now, we can't even compete with those who produce massive tea leaves with machines. What a shame. ",  "Cheif")			
+		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
+		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
+			scr_text_shake(54,80)	
+		scr_text("(deep sigh) Anyway, I know those rumors won’t affect you, Miss Zhang.  ",  "Cheif")				
+		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
+		scr_text("Thank you for coming, it means a lot to us here.  ",  "Cheif")			
+		scr_text("When he said he's glad that I'm here, I could tell he really means it." )	
+		scr_text("But something in his words still feels a little off..." )			
+			scr_option("Is there someone named Cheng Zhou in the village?", "Cheng_Zhou")		
+		break	
+		
+		case"village_recent_2_1":
+		scr_text("Well, you must have read the letter. Things are heading in a bad direction, our tea trees were never like the old time now.",  "Cheif")			
+		scr_text("they grow slowly, and the quality dropped continuously. ",  "Cheif")			
+		scr_text("Now, we can't even compete with those who produce massive tea leaves with machines. What a shame. ",  "Cheif")			
+		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
+		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
+			scr_text_shake(54,80)	
+		scr_text("(deep sigh) Anyway, I know those rumors won’t affect you, Miss Zhang.  ",  "Cheif")				
+		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
+		scr_text("Thank you for coming, it means a lot to us here.  ",  "Cheif")			
+		scr_text("When he said he's glad that I'm here, I could tell he really means it." )	
+		scr_text("But something in his words still feels a little off..." )			
+
+			scr_option("Could you give me an overview of the village's history?", "village_history_2_2")				
+		break			
+		
+		case"village_history_2_2":
+		scr_text("Gladly! You see, ZhouJia village has a long history. Our ancestors found this beautiful mountain and constructed the home we live in now.",  "Cheif")	
+		scr_text("The virtue of hardworking and faithfulness was passed on from our generation to generation. ",  "Cheif")			
+		scr_text("We grow tea trees for a living and the god of the mountain always blesses us with its power.  ",  "Cheif")					
+		scr_text("Our tea was welcomed by everyone, they have the best quality and smells that no one could resist.   ",  "Cheif")			
+		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
+		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
+			scr_text_shake(0,92)		
+		scr_text(" Leader...",  "An_Zhou")			
+		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
+			scr_option("Is there someone named Cheng Zhou in the village?", "Cheng_Zhou")	
+
+		break			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		case "Cheng_Zhou":
+		scr_text("......",  "Cheif")					
+		scr_text("!",  "An_Zhou")				
+		scr_text("Where did you hear that from? What do.....",  "An_Zhou")				
+		scr_text("Miss Zhang. I could assure you.",  "Cheif")	
+		scr_text("In this village, no one named Cheng Zhou lives here.",  "Cheif")			
+		scr_text("The atmosphere doesn't feel right, maybe I shouldn't ask that." )			
+			scr_option("That's enough for me now. Thank you for telling me these things.", "Cheif_finish")		
+		
+		
+		
+		break
+		
+		case "Cheif_finish":		
+		scr_text("Wonderful, Let's take you to the room then. AnZhou? Please lead the way up.",  "Cheif")				
+		
+		
+		
+		break		
 }
 
 }

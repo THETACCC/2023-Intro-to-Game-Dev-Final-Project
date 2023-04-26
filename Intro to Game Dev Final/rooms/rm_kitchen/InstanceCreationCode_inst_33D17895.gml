@@ -1,0 +1,1 @@
+target_speech = "kitchen_without_light"

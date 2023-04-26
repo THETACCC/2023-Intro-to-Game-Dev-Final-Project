@@ -47,7 +47,11 @@ switch(global.state)
 	instance_create_layer( 32,256 , "interactions",obj_kitchen_initial)	
 
 	}
+	
+	if room = rm_yuanzi_after_kitchen and global.cheif_initial = false{
+	instance_create_layer( 640,256 , "interactions",obj_chief_initial)	
 
+	}	
 	break
 	
 	case Gamestate.in_puzzle:
