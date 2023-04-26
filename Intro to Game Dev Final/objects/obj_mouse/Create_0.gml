@@ -87,8 +87,22 @@ state_free = function()
 		if instance_exists(obj_mytextbox) {
 		instance_destroy(obj_mytextbox)	
 				create_textbox("letter")
+				instance_create_layer(105,50,"light",obj_letter)
+				if instance_exists(obj_letter)
+				{
+					
+				obj_letter.appear = true
+				
+				}
 		} else {
 		create_textbox("letter")
+				instance_create_layer(105,50,"light",obj_letter)	
+				if instance_exists(obj_letter)
+				{
+					
+				obj_letter.appear = true
+				
+				}				
 		}
 		state = state_interact
 		}
@@ -162,7 +176,13 @@ state_interact = function()
 	
 	if (!instance_exists(obj_mytextbox))
 	{
-	
+				
+	if instance_exists(obj_letter)
+	{
+	obj_letter.appear = false
+	scr_inventory_remove(obj_inventory,0)		
+	}
+
 	state = state_free
 		
 	}

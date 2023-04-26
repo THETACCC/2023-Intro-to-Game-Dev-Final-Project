@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_candle",
-    "path": "sprites/spr_candle/spr_candle.yy",
+    "name": "spr_candle_with_light",
+    "path": "sprites/spr_candle_with_light/spr_candle_with_light.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -15,6 +15,11 @@ if image_alpha <= 0
 
 	
 }
-
+if image_index >=6
+{
+		
+image_index = 6	
+		
+}
 
 clamp(image_alpha,-0.1,1)

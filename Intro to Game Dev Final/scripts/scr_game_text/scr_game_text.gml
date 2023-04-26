@@ -59,7 +59,8 @@ switch(_text_id){
 		scr_text("However, he mentioned that only 1 researcher could go inside the village. ")	
 		scr_text("So, I recommend myself there. ")		
 		scr_text("Chief editor Zhao knows me well enough, I have a unique passion towards ancient villages like this. ")				
-		scr_text("According to the letter, the contact will be waiting for me at the gate to the mountain. I should go into that town to ask for directions, and maybe also collect some info about the Zhoujia Village.", "player")
+		scr_text("According to the letter, the contact will be waiting for me at the gate to the mountain.", "player")
+		scr_text("I should go into that town to ask for directions, and maybe also collect some info about the Zhoujia Village.", "player")		
 		break
 		
 		case "store":
@@ -203,7 +204,8 @@ switch(_text_id){
 		
 		case "An_Zhou_initial_4":
 		scr_text("......","player")
-		scr_text("Most places of this town were abandoned a long time ago, I remember the fellow here, I do good trades with him back in that days, but I think his son left the shop for the city after he passed away.","An_Zhou")	
+		scr_text("Most places of this town were abandoned a long time ago, I remember the fellow here,","An_Zhou")
+		scr_text("I do good trades with him back in that days, but I think his son left the shop for the city after he passed away.","An_Zhou")		
 		scr_text("(murmured) Passed away.......","player")		
 		scr_text("By the way, you say you are just talking to whom? Sorry, I didn't fully hear that sentence.","An_Zhou")
 		scr_text("No. No one. I just have the habit of talking to myself. Um, sorry, who are you?","player")		
@@ -240,9 +242,51 @@ switch(_text_id){
 		break	
 		
 		case "garden_An_Zhou_Leave":	
-		scr_text("An Zhou leaves the garden...")		
-		obj_An_Zhou.conversation_end = true	
-		obj_An_Zhou.image_xscale = 1		
+		scr_text("An Zhou leaves the garden...")	
+		obj_An_Zhou.state = 1	
+		obj_An_Zhou.conversation_end = true
+		obj_An_Zhou.start_moving = true			
+		obj_An_Zhou.image_xscale = -1		
+		break
+		
+		case "rice" :
+		scr_text("The tank looks empty.")			
+		break
+		
+		case "dead_tree":
+		scr_text("An old dead tree, but something feels wrongt with it.")	
+		scr_text("Meow~")		
+					scr_text_float(0,5)
+		scr_text("!!", "player")	
+			scr_option("It's that cat again!", "cat_leave")			
+
+		
+		break
+		case "cat_leave":
+		scr_text("Where are you going?!", "player")		
+		if !instance_exists(obj_cat)
+		{
+		instance_create_layer(467,224,"Instances",obj_cat)	
+			
+		}	
+		obj_dead_tree.appear = false
+		obj_black_screen_tree.appear = false			
+		instance_destroy(obj_dead_tree_talk)
+		instance_destroy(obj_rice_initial)	
+		instance_destroy(obj_invisible_wall)				
+		
+		obj_cat.start_running = true	
+			
+		break		
+		
+		case"do_not_enter_hallway"	:
+		scr_text("An Zhou told me that I should not enter the house by my own...", "player")			
+		
+		
+		break		
+		case"need_light":
+		scr_text("Why is this place so dark? I need to get a light source", "player")			
+		
 		break			
 }
 

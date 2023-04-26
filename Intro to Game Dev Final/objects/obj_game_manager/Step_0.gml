@@ -43,6 +43,10 @@ switch(global.state)
 	instance_create_layer( 90,256 , "interactions",obj_garden_An_Zhou)	
 
 	}
+	if room = rm_kitchen and global.kitchen_interaction = false {
+	instance_create_layer( 32,256 , "interactions",obj_kitchen_initial)	
+
+	}
 	break
 	
 	case Gamestate.in_puzzle:

@@ -3,3 +3,4 @@
 conversation_1 = false
 start_moving = false
 conversation_end = false
+state = 0

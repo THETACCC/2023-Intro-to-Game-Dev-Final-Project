@@ -27,7 +27,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_npc",
+    "path": "sprites/spr_npc/spr_npc.yy",
+  },
   "spriteMaskId": null,
-  "visible": true,
+  "visible": false,
 }
