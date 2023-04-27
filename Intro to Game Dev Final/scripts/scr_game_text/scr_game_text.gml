@@ -405,9 +405,14 @@ switch(_text_id){
 		
 		case "Cheif_finish":		
 		scr_text("Wonderful, Let's take you to the room then. AnZhou? Please lead the way up.",  "Cheif")				
+			scr_option("OK", "goto_bedroom")			
 		
 		
+		break	
 		
+		case "goto_bedroom":	
+			scr_text("")		
+		obj_room_transition_out.start_transition = true		
 		break		
 }
 
