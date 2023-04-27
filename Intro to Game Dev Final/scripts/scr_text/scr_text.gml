@@ -181,3 +181,10 @@ function create_textbox(_text_id) {
 		}
 	
 }
+
+
+//function for switch
+function scr_run_code(){
+	
+	
+}

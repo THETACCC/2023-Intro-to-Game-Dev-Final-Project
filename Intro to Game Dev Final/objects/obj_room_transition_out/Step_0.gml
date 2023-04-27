@@ -10,8 +10,9 @@ obj_player.image_index = spr_player_idle
 }
 if image_alpha >=  1
 {
-	
+	if instance_exists(obj_door)
+	{
 	obj_door.transition = true
-
+	}
 	
 }

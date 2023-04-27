@@ -87,6 +87,7 @@ state_free = function()
 		if instance_exists(obj_mytextbox) {
 		instance_destroy(obj_mytextbox)	
 				create_textbox("letter")
+				audio_play_sound(snd_letter_flip,1,false)
 				instance_create_layer(105,50,"light",obj_letter)
 				if instance_exists(obj_letter)
 				{
@@ -96,6 +97,7 @@ state_free = function()
 				}
 		} else {
 		create_textbox("letter")
+						audio_play_sound(snd_letter_flip,1,false)
 				instance_create_layer(105,50,"light",obj_letter)	
 				if instance_exists(obj_letter)
 				{

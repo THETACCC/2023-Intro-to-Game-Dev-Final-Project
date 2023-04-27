@@ -23,7 +23,8 @@ enum Gamestate {
 	Play,
 	in_puzzle,
 	talking,
-	scene
+	scene,
+	title
 	
 
 	
@@ -34,5 +35,6 @@ global.state = Gamestate.Play
 global.state = Gamestate.in_puzzle
 global.state = Gamestate.talking
 global.state = Gamestate.scene
+global.state = Gamestate.title
 // Here is the current state
 global.state = Gamestate.Play

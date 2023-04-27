@@ -22,7 +22,8 @@ if obj_camera.change_follow = 0 && (obj_camera.x = obj_camera.xprevious ) && con
 		conversation_1 = false	
 		conversation_end = true	
 		start_moving = true		
-		state = 1		
+		state = 1	
+
 		}
 	
 }
@@ -34,7 +35,7 @@ if instance_place(x,y,obj_An_Zhou_position)
 {
 		start_moving = false	
 		speed = 0
-
+		sprite_index = spr_An_Zhou
 } else if start_moving = true 	and	conversation_end = true	 {
 		
 move_towards_point(obj_An_Zhou_position.x,y,2)
@@ -47,3 +48,11 @@ move_towards_point(obj_An_Zhou_position.x,y,2)
 }
 
 
+if speed = 0 
+{
+	sprite_index = spr_An_Zhou
+	
+} else {
+	
+	sprite_index = spr_An_Zhou_walk	
+}

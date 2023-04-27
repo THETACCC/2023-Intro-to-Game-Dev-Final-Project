@@ -52,6 +52,11 @@ switch(global.state)
 	instance_create_layer( 640,256 , "interactions",obj_chief_initial)	
 
 	}	
+	
+	if room = rm_title 
+	{
+	global.state = Gamestate.title			
+	}
 	break
 	
 	case Gamestate.in_puzzle:
@@ -99,6 +104,17 @@ switch(global.state)
 	}	
 	
 	break	
+	
+	case Gamestate.title:	
+	if room != rm_title
+	{
+	global.state = Gamestate.Play		
+		
+	}
+	global.player_talking = true	
+	
+	break	
+	
 	default:
 	// use this to debug	
 	
