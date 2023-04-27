@@ -12,6 +12,8 @@ if image_alpha >=  1
 {
 	if text_created = false
 	{
+	obj_player.x = 356
+	obj_player.y = 240		
 	create_textbox("title")
 	text_created = true
 	}

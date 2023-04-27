@@ -4,8 +4,8 @@ function scr_game_text(_text_id){
 switch(_text_id){
 
 
-		case"title":
-		scr_text("village......")			
+		case"title":	
+
 		scr_text("......")		
 		
 		break		
@@ -267,7 +267,7 @@ switch(_text_id){
 		
 		case"picture":
 		scr_text("An old photo of a woman holds a girl in her hand, they seems to be happy.")			
-		scr_text("But the woman’s eyes were scratched with black stains. " )
+		scr_text("But the woman's eyes were scratched with black stains. " )
 		scr_text("There are some words in the bottom right corner of the photo: My dearest love. By Cheng Zhou. 1998.X.X " )		
 			scr_option("...", "picture_done")				
 		break
@@ -343,7 +343,7 @@ switch(_text_id){
 		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
 		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
 			scr_text_shake(54,80)	
-		scr_text("(deep sigh) Anyway, I know those rumors won’t affect you, Miss Zhang.  ",  "Cheif")				
+		scr_text("(deep sigh) Anyway, I know those rumors won't affect you, Miss Zhang.  ",  "Cheif")				
 		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
 		scr_text("Thank you for coming, it means a lot to us here.  ",  "Cheif")			
 		scr_text("When he said he's glad that I'm here, I could tell he really means it." )	
