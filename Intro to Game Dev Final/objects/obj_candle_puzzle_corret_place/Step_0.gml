@@ -13,7 +13,7 @@ if instance_place(x,y,obj_candle_light_puzzle)
 	obj_kitchen_vines.appear = true
 	instance_destroy(obj_candle_interact)
 	instance_destroy(obj_invisible_wall)
-	create_textbox("find_light")
+
 	}
 }else{
 

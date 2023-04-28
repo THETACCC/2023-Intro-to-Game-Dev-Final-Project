@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "start_screen",
+    "path": "folders/Objects/start_screen.yy",
   },
   "parentObjectId": null,
   "persistent": false,

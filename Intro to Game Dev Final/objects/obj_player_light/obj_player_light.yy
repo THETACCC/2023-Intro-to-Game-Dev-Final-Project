@@ -7,7 +7,7 @@
   ],
   "managed": true,
   "overriddenProperties": [
-    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"value":"$FF65ACFF",},
+    {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"propertyId":{"name":"Light_Color","path":"objects/obj_light/obj_light.yy",},"value":"$FF3F4FFF",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"propertyId":{"name":"Light_Intensity","path":"objects/obj_light/obj_light.yy",},"value":"6.8",},
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"propertyId":{"name":"Light_Range","path":"objects/obj_light/obj_light.yy",},"value":"219",},
   ],

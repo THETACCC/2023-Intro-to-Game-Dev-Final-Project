@@ -23,6 +23,19 @@ switch(_text_id){
 		scr_text("There's no need to head back now. I surely saw that abacus around here.", "player")		
 		break	
 		
+		
+		case"abacus_pickup":
+		scr_text("This must be the abacus he been asking for. ", "player")	
+				scr_option("(Take a look at it)" , "abacus_finish")				
+				
+		break
+		
+		case"abacus_finish":	
+		scr_text("I should hand this back to him.", "player")			
+		obj_abacus.appear = false				
+		obj_screen_effect_item_pickup.appear = false		
+		break		
+		
 		case "letter":
 		instance_destroy(obj_invisible_wall)
 		scr_text("Lets see...", "player")
@@ -314,8 +327,8 @@ switch(_text_id){
 		scr_text("No, I don't mean to.. I see a cat entering the door so I follow it through. Sorry, I never meant to keep you guys worried.", "player")
 		scr_text("Oh no no no, don't blame yourself for this.",  "Cheif")	
 		scr_text("None of this is supposed to happen today if I wasn't delayed by the village business. You have my apology, Miss Zhang.",  "Cheif")	
-		scr_text("So he must be the leader AnZhou kept mentioning about. He seems to know my name, maybe he's the one who contacted chief editor Zhao and scheduled this visit.")
-		scr_text(" (Sigh) Leader, we should get going, should we show our visitor her room now?",  "An_Zhou")			
+		scr_text("So he must be the Chief An Zhou kept mentioning about. He seems to know my name, maybe he's the one who contacted chief editor Zhao and scheduled this visit.")
+		scr_text(" (Sigh) Chief, we should get going, should we show our visitor her room now?",  "An_Zhou")			
 		scr_text("An, let's not hurry Miss Zhang. She seemed quite active and curious. It would be impolite if we ignore our visitor's needs.",  "Cheif")		
 		scr_text("So, is there anything about the village you'd like me to briefly talk you through now? Miss Zhang?",  "Cheif")		
 			scr_option("Could you give me an overview of the village's history?", "village_history_1_1")
@@ -330,7 +343,7 @@ switch(_text_id){
 		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
 		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
 			scr_text_shake(0,92)		
-		scr_text(" Leader...",  "An_Zhou")			
+		scr_text(" Chief...",  "An_Zhou")			
 		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
 			scr_option("How's the village doing recently?", "village_recent_1_2")	
 
@@ -358,7 +371,7 @@ switch(_text_id){
 		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
 		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
 			scr_text_shake(54,80)	
-		scr_text("(deep sigh) Anyway, I know those rumors won’t affect you, Miss Zhang.  ",  "Cheif")				
+		scr_text("(deep sigh) Anyway, I know those rumors won't affect you, Miss Zhang.  ",  "Cheif")				
 		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
 		scr_text("Thank you for coming, it means a lot to us here.  ",  "Cheif")			
 		scr_text("When he said he's glad that I'm here, I could tell he really means it." )	
@@ -375,7 +388,7 @@ switch(_text_id){
 		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
 		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
 			scr_text_shake(0,92)		
-		scr_text(" Leader...",  "An_Zhou")			
+		scr_text(" Chief...",  "An_Zhou")			
 		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
 			scr_option("Is there someone named Cheng Zhou in the village?", "Cheng_Zhou")	
 

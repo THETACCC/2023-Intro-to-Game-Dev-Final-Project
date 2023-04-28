@@ -11,7 +11,7 @@ if global.state = Gamestate.in_puzzle {
 if image_alpha <= 0 
 {
 	
-
+	create_textbox("find_light")
 	instance_destroy(self)
 
 	

@@ -6,8 +6,14 @@
 	scr_inventory_add(obj_inventory,2)
 	instance_destroy(self)
 	obj_F_1.my_create = false
- 
+	create_textbox("abacus_pickup")		
 	 check_time = check_timer
+	 if !instance_exists(obj_abacus)
+	 {
+			instance_create_depth(obj_camera.x,obj_camera.y,-999,obj_abacus)
+			obj_abacus.appear = true
+	 }
+	obj_screen_effect_item_pickup.appear = true
 
 	}
 
