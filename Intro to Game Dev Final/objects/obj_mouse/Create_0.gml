@@ -45,6 +45,10 @@ mouse_over = function()
 		
 	}
 
+
+
+
+
 	if(instance_place(mouse_x,mouse_y,obj_candle_light_puzzle	))
 	{
 		
@@ -119,6 +123,17 @@ state_free = function()
 				}
 				obj_player.image_index = spr_player_hold_idle		
 		}	
+		if inventory_hover.inventory[slot_hover] = 5
+		{
+			
+		if instance_exists(obj_mytextbox) {
+		instance_destroy(obj_mytextbox)	
+				create_textbox("GPS")
+	
+		} else {
+		create_textbox("GPS")									
+		}
+		}
 		
 	}
 	

@@ -17,7 +17,10 @@ if room = rm_title or room = rm_start
 	{
 	audio_play_sound(snd_store_bgm,1,true)	
 	audio_sound_gain(snd_store_bgm,0,0)		
-	audio_sound_gain(snd_store_bgm,0.5,4000)				
+	audio_sound_gain(snd_store_bgm,0.2,4000)		
+	audio_play_sound(snd_horror_texture,1,true)		
+	audio_sound_gain(snd_horror_texture,0,0)		
+	audio_sound_gain(snd_horror_texture,0.2,4000)		
 	}
 	if audio_is_playing(snd_intro_bgm)
 	{

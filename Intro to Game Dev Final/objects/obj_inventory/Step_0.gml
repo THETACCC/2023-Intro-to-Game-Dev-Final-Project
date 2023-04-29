@@ -16,4 +16,3 @@ if global.player_inventory = true
 	y = lerp (y,obj_camera.y - 400, 0.1)
 
 }
-

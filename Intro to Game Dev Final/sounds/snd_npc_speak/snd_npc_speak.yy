@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.109932,
+  "duration": 0.705873,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
@@ -19,5 +19,5 @@
   "sampleRate": 44100,
   "soundFile": "snd_npc_speak.wav",
   "type": 0,
-  "volume": 1.0,
+  "volume": 0.1,
 }

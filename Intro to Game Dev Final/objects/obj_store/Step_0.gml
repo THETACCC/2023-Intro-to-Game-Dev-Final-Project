@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if found_player = true & fade_away = false
 {
-	image_alpha += 0.5
+	image_alpha += 0.9
 
 
 } else  {

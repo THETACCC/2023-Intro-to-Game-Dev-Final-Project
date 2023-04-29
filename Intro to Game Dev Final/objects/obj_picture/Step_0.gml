@@ -11,5 +11,14 @@ image_alpha -= 0.05
 	
 }
 if image_alpha < 0 {
-	instance_destroy(self)
+	if audio_is_playing(snd_scary_violin)
+	{
+	audio_sound_gain(snd_scary_violin,0,2000)
+		if audio_sound_get_gain(snd_scary_violin) <= 0
+		{	
+		audio_stop_sound(snd_scary_violin)	
+		instance_destroy(self)		
+		}
+	}	
+
 }

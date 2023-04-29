@@ -115,6 +115,23 @@ switch(global.state)
 	
 	break	
 	
+	case Gamestate.mask_puzzle:
+	obj_player.m_vvel = 0
+	obj_player.m_hvel = 0		
+	global.player_talking = true	
+	if instance_exists(obj_F_talking)
+	{
+	instance_destroy(obj_F_talking)
+	}	
+	if keyboard_check_pressed(vk_escape)
+	{
+	global.player_talking = false		
+	global.state = Gamestate.Play
+		
+	}	
+	break
+	
+	
 	default:
 	// use this to debug	
 	

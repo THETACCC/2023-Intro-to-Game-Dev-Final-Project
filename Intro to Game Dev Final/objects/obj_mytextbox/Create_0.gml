@@ -41,7 +41,8 @@ setup =false
 //sound
 snd_delay = 4
 snd_count = snd_delay
-
+snd_effect = -1
+sound_played = false
 
 
 //effects

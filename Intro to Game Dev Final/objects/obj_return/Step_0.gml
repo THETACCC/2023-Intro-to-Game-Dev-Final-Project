@@ -10,6 +10,7 @@ if place_meeting(x,y,obj_title_mouse)
 	open_credit = false
 	obj_credit_screen.appear = false
 	obj_credit.open_credit = false
+	audio_play_sound(snd_click,1,false)	
 	}
 	
 } else {

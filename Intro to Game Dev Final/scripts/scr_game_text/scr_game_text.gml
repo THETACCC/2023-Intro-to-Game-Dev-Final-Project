@@ -6,7 +6,18 @@ switch(_text_id){
 
 		case"title":	
 
-		scr_text("......")		
+		scr_text("From memory onwards, I have always had the same dream." )		
+		scr_text("At first, I always stood at the foot of the mountain,")	
+		scr_text("but as the dream proceeded, I would lose my perception of my form and be attracted by a certain consciousness to fly towards the mountains.")			
+		scr_text("As I approached, I was finally able to cross the thick mountain mist and see the true nature of the light spots in the mountains:") 
+		scr_text("they were lanterns hanging from the old eaves, clearly without wind, but slowly swaying neatly.")	
+		scr_text("With the help of those dim lights, I saw an ancient and dilapidated village, stacked and scattered in the mountains, covered by huge and withered tree roots.")			
+		scr_text("In the shadows cast by those roots, something was vaguely wriggling and surging, ready to break through from the darkness at any time.")
+		scr_text("This was originally a scene full of profanity, but I uncontrollably grew eager to move forward, even to touch the wriggling shadows.")			
+		scr_text("And whenever this happens, my field of vision is suddenly occupied by a sudden burst of white light, and when I open my eyes, it's another morning.")			
+		scr_text("Why do I constantly dream of all this, does the mountain village in my dream really exist?")				
+		scr_text("For many years, doubts and nightmares have been constantly troubling me, accompanied by a strange premonition.")						
+		scr_text("This premonition grew stronger as I grew older, and I couldn't help but believe that one day, I would return to my dream village and find all the answers with my own hands.")				
 		
 		break		
 		
@@ -22,7 +33,11 @@ switch(_text_id){
 		case"find_item":
 		scr_text("There's no need to head back now. I surely saw that abacus around here.", "player")		
 		break	
-		
+	
+		case"GPS":
+		scr_text("This is a GPS, no need to use it now.", "player")		
+		break		
+	
 		
 		case"abacus_pickup":
 		scr_text("This must be the abacus he been asking for. ", "player")	
@@ -79,7 +94,8 @@ switch(_text_id){
 		
 		case "cat":		
 		scr_text("That Cat feels familiar to me, why?", "player")	
-		scr_text("Meow~")			
+		scr_text("Meow~","cat")		
+						scr_text_float(0,5)			
 				scr_option("(I MUST CATCH IT!)" , "Cat-1")		
 		instance_deactivate_object(obj_invisible_wall)		
 		instance_destroy(obj_cat_initial)		
@@ -120,7 +136,7 @@ switch(_text_id){
 		case "shop_owner_question2-1":
 		scr_text("Haha, those people of Zhou. Selfish, gloomy bastard. How's their trade? Their trades were all screwed! ", "shop_owner")	
 		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain. ", "shop_owner")		
-		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")	
+		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner_mad")	
 				scr_text_shake(0,79)			
 		scr_text("When they are in their heyday, they never let anyone enter that mountain, anyone outside of the people of Zhou!", "shop_owner")
 		scr_text("Well now you see, they don’t even need a guard anymore. Because no one value their ‘family secret’ now! Only a writer would be interested, ha! How funny! ", "shop_owner")	
@@ -138,7 +154,7 @@ switch(_text_id){
 		case "shop_owner_question2-2":
 		scr_text("Haha, those people of Zhou. Selfish, gloomy bastard. How's their trade? Their trades were all screwed! ", "shop_owner")	
 		scr_text("I can't remember how long ago, must have been over at least 15 years ago. Suddenly one day, I never see tea coming down their precious mountain.", "shop_owner")		
-		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner")	
+		scr_text("So, they are all screwed! Bless of god? I say they were all cursed by god now! ", "shop_owner_mad")	
 				scr_text_shake(0,79)	
 		scr_text("When they are in their heyday, they never let anyone enter that mountain, anyone outside of the people of Zhou!", "shop_owner")
 		scr_text("Well now you see, they don't even need a guard anymore. Because no one value their 'family secret' now! Only a writer would be interested, ha! How funny! ", "shop_owner")			

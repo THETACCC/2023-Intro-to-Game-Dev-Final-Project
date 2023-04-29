@@ -34,7 +34,6 @@ if setup == false {
 	for(var p = 0; p < page_number; p++) 
 	{
 		text_length[p] = string_length(text[p])	
-		
 		//get x position for my text box
 			//character on the lesft
 			text_x_offset[p] = 128
@@ -131,6 +130,7 @@ if setup == false {
 
 // typing the text
 if text_pause_timer <= 0 {
+
 	if draw_char < text_length[page]
 	{
 	draw_char += text_spd
@@ -204,7 +204,24 @@ if accept_key
 
 //draw the UI for guide
 
+if sound_effect[page] != noone
+{
+	if !audio_is_playing(sound_effect[page]) and sound_played = false
+	{
+	audio_play_sound(sound_effect[page],1,false)
+	sound_played = true	
+	}
+} else if  sound_effect[page]= noone and page >= 1
+{
+	sound_played = false			
+	if audio_is_playing(sound_effect[page-1])
+	{
+	audio_stop_sound(sound_effect[page-1])		
 
+	}
+	
+	
+}
 
 
 

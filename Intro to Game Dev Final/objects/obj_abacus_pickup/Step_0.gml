@@ -4,6 +4,7 @@
 	check_time --
 	if check_time <= 0  {
 	scr_inventory_add(obj_inventory,2)
+	audio_play_sound(snd_pickup,1,false)
 	instance_destroy(self)
 	obj_F_1.my_create = false
 	create_textbox("abacus_pickup")		

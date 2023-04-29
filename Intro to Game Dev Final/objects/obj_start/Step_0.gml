@@ -8,7 +8,9 @@ if place_meeting(x,y,obj_title_mouse)
 	if mouse_check_button_pressed(mb_left)
 	{
 	game_start = true
-	obj_room_transition_out_title.start_transition = true		
+	obj_room_transition_out_title.start_transition = true	
+	audio_play_sound(snd_click,1,false)	
+	obj_credit.open_credit = true
 	}
 	
 } else {

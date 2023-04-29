@@ -30,7 +30,7 @@ function scr_set_defaults_for_text(){
 	speaker_side[page_number] = 1
 	
 	snd[page_number] = snd_speak
-	
+	sound_effect[page_number] =	noone
 }
 
 
@@ -120,6 +120,13 @@ if argument_count > 1 {
 			snd[page_number] = snd_npc_speak				
 		break;
 		
+		case "shop_owner_mad":
+			speaker_sprite[page_number] = spr_shop_owner
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak	
+			sound_effect[page_number] =	snd_scary_waterphone
+		break;		
+		
 		case "shop_owner_notfound":
 			speaker_sprite[page_number] = spr_shop_owner
 			txtb_spr[page_number] = spr_mytextbox_npc
@@ -139,9 +146,10 @@ if argument_count > 1 {
 		break;
 		
 		case "cat":
-			speaker_sprite[page_number] = spr_cat_idle
+			speaker_sprite[page_number] = noone	
 			txtb_spr[page_number] = spr_mytextbox_npc
-			snd[page_number] = snd_npc_speak				
+			snd[page_number] = snd_npc_speak	
+			sound_effect[page_number] =	snd_cat_meow			
 		break;
 
 		case "Cheif":
@@ -184,7 +192,8 @@ function create_textbox(_text_id) {
 
 
 //function for switch
-function scr_run_code(){
+///@param _sound
+//function scr_run_code(sound_id){
+//	audio_play_sound([sound_id],1,false) 
 	
-	
-}
+//}
