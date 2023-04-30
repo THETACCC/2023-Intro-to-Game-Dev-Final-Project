@@ -97,7 +97,7 @@ m_previousgrounded = m_grounded
 
 
 //open inventory
-if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	and global.state = Gamestate.Play 	and !instance_exists(obj_mytextbox)
+if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	and global.state = Gamestate.Play 	and !instance_exists(obj_mytextbox) and allow_inventory = true
 {
 	audio_play_sound(snd_open_inventory,1,false)
 	m_hvel = 0
@@ -110,7 +110,7 @@ if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	and globa
 			obj_inventory_open.appear = true
 	}
 
-} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true 	{
+} else if keyboard_check_pressed(vk_tab) and global.player_inventory = true and allow_inventory = true 	{
 	audio_play_sound(snd_close_inventory,1,false)	
 	global.player_inventory = false	
 	if instance_exists(obj_inventory_open)
@@ -118,7 +118,7 @@ if keyboard_check_pressed(vk_tab) and global.player_inventory = false 	and globa
 
 			obj_inventory_open.appear = false
 	}	
-} else if instance_exists(obj_mytextbox){
+} else if instance_exists(obj_mytextbox) and allow_inventory = true{
 	
 	global.player_inventory = false		
 	if instance_exists(obj_inventory_open)

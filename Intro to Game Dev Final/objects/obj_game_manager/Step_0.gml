@@ -125,7 +125,8 @@ switch(global.state)
 	}	
 	if keyboard_check_pressed(vk_escape)
 	{
-	global.player_talking = false		
+	global.player_talking = false	
+	
 	global.state = Gamestate.Play
 		
 	}	

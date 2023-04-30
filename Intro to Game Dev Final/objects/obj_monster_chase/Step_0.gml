@@ -3,13 +3,25 @@
 switch(state)
 {	
 	case "idle":
+	image_xscale = sign(obj_player.x - x) * -1
+	if image_xscale == 0
+	{
 	
+		image_xscale = -1
+		
+	}	
+	
+	 if start_chase = true and !instance_exists(obj_mytextbox)
+	 {
+		state = "chase" 
+	 }
 	
 	break
 	
 	case "chase":
 	sprite_index = spr_guard_walk
-	if not instance_exists(obj_player) break;
+	if not instance_exists(obj_player) 
+	break;
 	
 	image_xscale = sign(obj_player.x - x) * -1
 	if image_xscale == 0
@@ -24,6 +36,7 @@ switch(state)
 	var distance_to_player = point_distance(x,y,obj_player.x,obj_player.y)
 	if distance_to_player < 64 
 	{
+
 		state = "attack"		
 	image_index = 0
 		
@@ -32,7 +45,7 @@ switch(state)
 	{
 		
 
-		move_and_collide(location * 2 , 0,obj_player)	
+		move_and_collide(location * 1.4 , 0,obj_player)	
 		
 	}
 	

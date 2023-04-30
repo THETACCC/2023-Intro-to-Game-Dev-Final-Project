@@ -7,3 +7,10 @@ inventory[1] = 2
 inventory[2] = 3
 inventory[3] = 4
 
+timer = 90
+mytime = timer
+counted = false
+solved = false
+speaked = false
+shaked = false
+

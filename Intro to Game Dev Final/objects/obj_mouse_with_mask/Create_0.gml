@@ -89,7 +89,7 @@ state_drag = function()
 		
 		
 	}
-	show_debug_message(item_drag)
+
 
 }
 

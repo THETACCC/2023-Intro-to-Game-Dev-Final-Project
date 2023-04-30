@@ -34,6 +34,9 @@ m_position_x = x
 m_position_y = y
 
 
+//inventory
+allow_inventory = true
+
 //Collisions
 
 onCollideX = function() {

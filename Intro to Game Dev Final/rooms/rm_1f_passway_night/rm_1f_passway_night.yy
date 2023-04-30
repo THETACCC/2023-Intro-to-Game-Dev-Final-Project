@@ -25,6 +25,7 @@
     {"name":"inst_3BE5C3EB_1_1","path":"rooms/rm_1f_passway_night/rm_1f_passway_night.yy",},
     {"name":"inst_3A1A2C22_1","path":"rooms/rm_1f_passway_night/rm_1f_passway_night.yy",},
     {"name":"inst_59E1A93B_1","path":"rooms/rm_1f_passway_night/rm_1f_passway_night.yy",},
+    {"name":"inst_244FF7D6","path":"rooms/rm_1f_passway_night/rm_1f_passway_night.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -59,7 +60,8 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_677180DD_1_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},"properties":[],"rotation":0.0,"scaleX":4.0,"scaleY":1.0,"x":672.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":false,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59E1A93B_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_monster_chase","path":"objects/obj_monster_chase/obj_monster_chase.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":144.0,"y":239.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_59E1A93B_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_monster_chase","path":"objects/obj_monster_chase/obj_monster_chase.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":93.0,"y":239.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_244FF7D6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_1f_chase","path":"objects/obj_1f_chase/obj_1f_chase.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":317.0,"y":243.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"solids","depth":1100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6E8179C2_3_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":40.0,"scaleY":0.5,"x":1280.0,"y":256.0,},

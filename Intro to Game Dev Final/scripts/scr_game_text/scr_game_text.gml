@@ -434,15 +434,153 @@ switch(_text_id){
 		
 		case "Cheif_finish":		
 		scr_text("Wonderful, Let's take you to the room then. AnZhou? Please lead the way up.",  "Cheif")				
-			scr_option("OK", "goto_bedroom")			
+			scr_option("Okay", "goto_bedroom")			
 		
 		
 		break	
 		
 		case "goto_bedroom":	
 			scr_text("")		
-		obj_room_transition_out.start_transition = true		
+		obj_room_transition_out_yuan_zi.start_transition = true		
 		break		
+		
+		case "bedroom_initial":		
+		scr_text("what a long day....", "player")		
+		scr_text("I should settle my backpack on the table before taking time to rest and summarize.", "player")				
+
+		break
+
+		case"bedroom_think":
+		scr_text("Huh, I didn't even realize it was already afternoon", "player")		
+		scr_text("I encountered many strange things today, and I always feel that AnZhou and the chief I have met have an indescribable sense of discord.", "player")	
+		scr_text("The photo I found in the kitchen, for some reason, always has a sense of familiarity.", "player")		
+		scr_text("Is this village related to the place in my dream?", "player")				
+		scr_text("The strange intuition in my mind is getting stronger, and those rotting vines in the kitchen are similar to those tree roots in my dream. ", "player")						
+		scr_text("It's so weird. If it weren't for my illusion, then there must be something wrong with this village.", "player")				
+		scr_text("There is also the cat that I have been encountering since arriving at the foot of the mountain.  ", "player")			
+		scr_text("I remember there is a superstition that records the fact that black cats can protect their master's descendants.  ", "player")			
+		scr_text("Was it raised by the villagers as a wish for blessing? But I always feel that cat has been avoiding villagers.  ", "player")	
+		scr_text("Anyway, in future exploration, I need to find ways to collect more useful information to solve these mysteries.  ", "player")	
+			scr_option("For today, I would just rest for now", "cat_appear")			
+					
+		break
+		case"cat_appear":		
+		obj_cat_bedroom.start_running = true
+		scr_text("Meow~")		
+					scr_text_float(0,5)		
+		scr_text("I was just thinking about you... Why are you here? ", "player")		
+		scr_text("...")		
+			scr_option("What's wrong?", "scroll_close")		
+		break		
+		case"scroll_close":	
+		obj_scroll.scroll = true
+		obj_room_transition_out_bedroom.start_transition = true
+		scr_text("!!! ", "player")			
+		scr_text("(Cough) What's... happening.... ", "player")					
+		scr_text("... ", "player")				
+		break			
+
+		case"cat_night":	
+		scr_text("(SCRATCH...SCRATCH...)")			
+		scr_text("Uhh... ", "player")			
+		scr_text("I passed out...?", "player")			
+		scr_text("...", "player")			
+		scr_text("Looks like someone stole my bag", "player")	
+		scr_text("This is NOT GOOD", "player")			
+		scr_text("I have find my bag and get out of here", "player")				
+		
+		break	
+		
+		case"open_window":	
+		scr_text("looks like I could open this window and flip through it..", "player")		
+		scr_text("It is old, but I think I could force it to open", "player")				
+			scr_option("(Use force to open)", "window_make_sound")			
+		break	
+		case"window_make_sound":	
+		scr_text("......", "player")			
+		scr_text("What was that sound?", "player")			
+		scr_text("...", "player")				
+		scr_text("Nevermind, I should move on", "player")			
+			scr_option("(flip through window)", "window_flip")			
+		break	
+		case"window_flip":			
+		scr_text("")		
+		obj_room_transition_out_bedroom_night.start_transition = true
+		
+		
+		break
+		
+		case"2f_initial":			
+		scr_text("...", "player")		
+		scr_text("!!!", "player")		
+			scr_option("(hide behind the pot)", "player_hidding")			
+		break		
+
+		case"player_hidding":
+		scr_text("")			
+		obj_player.image_alpha = 0.6
+		
+		break		
+		
+		case"player_hide":
+		obj_cat_move.state = "chase"
+		scr_text("That guy looks dangerous...", "player")		
+		scr_text("I should not make a sound", "player")			
+		
+		
+		break	
+		
+		case"player_move":
+		scr_text("MeoOW!!")		
+		scr_text("The cat...?", "player")			
+			scr_option("(Is that cat helping me?)", "player_help")			
+		obj_monster_patrol.state = "flip"		
+
+
+		
+		
+		break
+		case"player_help":	
+		scr_text("(That guy walks away....)", "player")			
+		obj_cat_move.state = "chase-2"				
+		obj_monster_patrol.state = "patrol-2"		
+		obj_player.image_alpha = 1		
+		break	
+		
+		case"2f_do_not_pass":		
+		scr_text("That man may come back, I should probably go down stairs instead", "player")			
+			
+		break	
+		
+		case"mask_solve":
+		scr_text("I believe this was the pattern", "player")			
+			scr_option("...", "mask_scare")		
+		
+		break
+		
+		case"mask_scare":	
+		with(obj_inventory_mask)
+		{
+		inventory[0] = 5
+		inventory[1] = 6
+		inventory[2] = 7
+		inventory[3] = 8		
+			
+		}
+		scr_text("!!!", "player")			
+		scr_text("They also hide my bag here...", "player")		
+		obj_backpack_pickup.appear = true
+		break
+
+
+		case "1f_chase":
+		scr_text("IT'S HIM!", "player")	
+		scr_text("RUN")	
+			scr_text_shake(0,3)		
+		obj_monster_chase.start_chase = true
+		break
+
+
 }
 
 }
