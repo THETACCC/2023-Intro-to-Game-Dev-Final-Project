@@ -144,6 +144,12 @@ if argument_count > 1 {
 			txtb_spr[page_number] = spr_mytextbox_npc
 			snd[page_number] = snd_npc_speak				
 		break;
+		case "An_Zhou_angry":
+			speaker_sprite[page_number] = spr_An_Zhou_talking
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak	
+			sound_effect[page_number] =	snd_glitch		
+		break;		
 		
 		case "cat":
 			speaker_sprite[page_number] = noone	
@@ -151,11 +157,25 @@ if argument_count > 1 {
 			snd[page_number] = snd_npc_speak	
 			sound_effect[page_number] =	snd_cat_meow			
 		break;
+		
+		case "cat_angry":
+			speaker_sprite[page_number] = noone	
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak	
+			sound_effect[page_number] =	snd_cat_angry			
+		break;		
 
 		case "Cheif":
 			speaker_sprite[page_number] = spr_chief_talking
 			txtb_spr[page_number] = spr_mytextbox_npc
 			snd[page_number] = snd_npc_speak				
+		break;
+
+		case "Cheif-mad":
+			speaker_sprite[page_number] = spr_chief_talking
+			txtb_spr[page_number] = spr_mytextbox_npc
+			snd[page_number] = snd_npc_speak	
+			sound_effect[page_number] =	snd_glitch	
 		break;
 
 	}

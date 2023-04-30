@@ -52,6 +52,14 @@ switch(global.state)
 	instance_create_layer( 640,256 , "interactions",obj_chief_initial)	
 
 	}	
+	if room = rm_1f_passway_night_without_ghost and global.puzzle_1f = false and !instance_exists(obj_1f_puzzle_initial){
+	instance_create_layer( 670,256 , "interactions",obj_1f_puzzle_initial)	
+
+	}		
+	if (room = rm_maskroom or room = rm_gongpin) and global.puzzle_mask = false and !instance_exists(obj_mask_puzzle_initial){
+	instance_create_layer( 0,256 , "interactions",obj_mask_puzzle_initial)	
+
+	}		
 	
 	if room = rm_title 
 	{

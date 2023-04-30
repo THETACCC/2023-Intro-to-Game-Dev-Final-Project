@@ -11,6 +11,7 @@ if place_meeting(x,y,obj_title_mouse)
 	obj_room_transition_out_title.start_transition = true	
 	audio_play_sound(snd_click,1,false)	
 	obj_credit.open_credit = true
+	audio_play_sound(snd_car_initial,1,false)		
 	}
 	
 } else {

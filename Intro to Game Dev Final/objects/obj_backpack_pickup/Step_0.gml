@@ -18,7 +18,7 @@ image_alpha += 0.05
 
 
 } 
-if instance_place(x,y,obj_player) && !keyboard_check(ord("F")) and appear = true  {
+if instance_place(x,y,obj_player) && !keyboard_check(ord("F")) and appear = true && !instance_exists(obj_mytextbox) {
 	check_time = check_timer
 
 	if (!instance_exists(obj_F_1))

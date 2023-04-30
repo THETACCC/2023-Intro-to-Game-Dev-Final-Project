@@ -1,3 +1,3 @@
-target_room = rm_ghost_room
-target_x = 1120
-target_y = 256
+target_room = rm_ghost_chase
+target_x = 320
+target_y = 240

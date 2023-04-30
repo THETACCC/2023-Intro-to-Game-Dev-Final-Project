@@ -119,7 +119,7 @@ state_free = function()
 				instance_create_layer(obj_player.x,obj_player.y, "light",obj_player_light)	
 				obj_player.candle_get = true
 				instance_create_layer(obj_player.x,obj_player.y, "objects",obj_candle_hold)		
-
+				scr_inventory_remove(obj_inventory, 4)
 				}
 				obj_player.image_index = spr_player_hold_idle		
 		}	
@@ -134,6 +134,17 @@ state_free = function()
 		create_textbox("GPS")									
 		}
 		}
+		if inventory_hover.inventory[slot_hover] = 5 and room = rm_loft
+		{
+			
+		if instance_exists(obj_mytextbox) {
+		instance_destroy(obj_mytextbox)	
+				create_textbox("GPS-final")
+	
+		} else {
+		create_textbox("GPS-final")									
+		}
+		}		
 		
 	}
 	

@@ -260,13 +260,24 @@ switch(_text_id){
 		
 		case "dead_tree":
 		scr_text("An old dead tree, but something feels wrongt with it.")	
-		scr_text("Meow~")		
+			scr_option("look closer","tree_closer")
+		
+		break		
+		
+		case "tree_closer" :	
+		obj_dead_tree_ghost.appear = true
+		scr_text("")				
+		scr_text("What was that?","player")		
+		scr_text("...","player")			
+		scr_text("Maybe it's just because I didn't get enough sleep...","player")					
+		scr_text("Meow~","cat")
+						scr_text_float(0,5)				
 					scr_text_float(0,5)
 		scr_text("!!", "player")	
 			scr_option("It's that cat again!", "cat_leave")			
+		obj_dead_tree.appear = false
+		break		
 
-		
-		break
 		case "cat_leave":
 		scr_text("Where are you going?!", "player")		
 		if !instance_exists(obj_cat)
@@ -274,7 +285,8 @@ switch(_text_id){
 		instance_create_layer(467,224,"Instances",obj_cat)	
 			
 		}	
-		obj_dead_tree.appear = false
+		obj_dead_tree_ghost.appear = false	
+
 		obj_black_screen_tree.appear = false			
 		instance_destroy(obj_dead_tree_talk)
 		instance_destroy(obj_rice_initial)	
@@ -338,7 +350,7 @@ switch(_text_id){
 		
 		case"cheif_initial":
 		scr_text("Miss, Why are you here? We've been looking for you, and I told you to stay in the garden," , "An_Zhou")
-		scr_text("guess my suggestion really doesn't mean much to you.",  "An_Zhou")	
+		scr_text("guess my suggestion really doesn't mean much to you.",  "An_Zhou_angry")	
 				scr_text_shake(0,52)		
 		scr_text("No, I don't mean to.. I see a cat entering the door so I follow it through. Sorry, I never meant to keep you guys worried.", "player")
 		scr_text("Oh no no no, don't blame yourself for this.",  "Cheif")	
@@ -357,7 +369,7 @@ switch(_text_id){
 		scr_text("We grow tea trees for a living and the god of the mountain always blesses us with its power.  ",  "Cheif")					
 		scr_text("Our tea was welcomed by everyone, they have the best quality and smells that no one could resist.   ",  "Cheif")			
 		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
-		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
+		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif-mad")			
 			scr_text_shake(0,92)		
 		scr_text(" Chief...",  "An_Zhou")			
 		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
@@ -370,7 +382,7 @@ switch(_text_id){
 		scr_text("they grow slowly, and the quality dropped continuously. ",  "Cheif")			
 		scr_text("Now, we can't even compete with those who produce massive tea leaves with machines. What a shame. ",  "Cheif")			
 		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
-		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
+		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif-mad")				
 			scr_text_shake(54,80)	
 		scr_text("(deep sigh) Anyway, I know those rumors won't affect you, Miss Zhang.  ",  "Cheif")				
 		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
@@ -385,7 +397,7 @@ switch(_text_id){
 		scr_text("they grow slowly, and the quality dropped continuously. ",  "Cheif")			
 		scr_text("Now, we can't even compete with those who produce massive tea leaves with machines. What a shame. ",  "Cheif")			
 		scr_text("All villagers here suffered a lot these years, and towns around the village were also affected. ",  "Cheif")
-		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif")				
+		scr_text("Some even say we were forsaken by the mountain god....What an absurd accusation. ",  "Cheif-mad")				
 			scr_text_shake(54,80)	
 		scr_text("(deep sigh) Anyway, I know those rumors won't affect you, Miss Zhang.  ",  "Cheif")				
 		scr_text("You seem wise to me, and I believe you are here to change this situation.  ",  "Cheif")				
@@ -402,7 +414,7 @@ switch(_text_id){
 		scr_text("We grow tea trees for a living and the god of the mountain always blesses us with its power.  ",  "Cheif")					
 		scr_text("Our tea was welcomed by everyone, they have the best quality and smells that no one could resist.   ",  "Cheif")			
 		scr_text("Those good old days, I could still dream of them some nights, but they are all gone now. That's why we sent you that letter, Miss Zhang.",  "Cheif")				
-		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif")			
+		scr_text("We truly hope that, with your help, this village may still have a future to look forward to.",  "Cheif-mad")			
 			scr_text_shake(0,92)		
 		scr_text(" Chief...",  "An_Zhou")			
 		scr_text("Oh, I get too excited again am I? Sorry Miss Zhang, please pardon this noisy old man.",  "Cheif")		
@@ -466,7 +478,7 @@ switch(_text_id){
 		break
 		case"cat_appear":		
 		obj_cat_bedroom.start_running = true
-		scr_text("Meow~")		
+		scr_text("Meow~","cat")		
 					scr_text_float(0,5)		
 		scr_text("I was just thinking about you... Why are you here? ", "player")		
 		scr_text("...")		
@@ -497,8 +509,9 @@ switch(_text_id){
 			scr_option("(Use force to open)", "window_make_sound")			
 		break	
 		case"window_make_sound":	
+		obj_window.audio_play = true
 		scr_text("......", "player")			
-		scr_text("What was that sound?", "player")			
+		scr_text("What was that walking sound?", "player")			
 		scr_text("...", "player")				
 		scr_text("Nevermind, I should move on", "player")			
 			scr_option("(flip through window)", "window_flip")			
@@ -531,7 +544,7 @@ switch(_text_id){
 		break	
 		
 		case"player_move":
-		scr_text("MeoOW!!")		
+		scr_text("MeoOW!!","cat_angry")		
 		scr_text("The cat...?", "player")			
 			scr_option("(Is that cat helping me?)", "player_help")			
 		obj_monster_patrol.state = "flip"		
@@ -567,20 +580,126 @@ switch(_text_id){
 		inventory[3] = 8		
 			
 		}
-		scr_text("!!!", "player")			
-		scr_text("They also hide my bag here...", "player")		
+		scr_text("!!!", "player")		
+		scr_text("Something opened..", "player")			
+		scr_text("I see, they hide my bag here...", "player")
+		scr_text("Now I just need to head upstairs for better signal", "player")
+		scr_text("but what was that walking sound...?", "player")		
 		obj_backpack_pickup.appear = true
 		break
 
 
 		case "1f_chase":
+		scr_text("!!!", "player")			
 		scr_text("IT'S HIM!", "player")	
 		scr_text("RUN")	
 			scr_text_shake(0,3)		
 		obj_monster_chase.start_chase = true
 		break
+		
+		
+		case"1f_puzzle_initial":
+		scr_text("I need my GPS to acquire help", "player")				
+		scr_text("They must hide my bag somewhere here", "player")			
+
+		
+		
+		break
+
+		case"mask_puzzle_initial":
+		
+		scr_text("what are these...", "player")				
+		scr_text("It seems like these two rooms are connected in some way", "player")				
+		scr_text("I should investigate both rooms to undersand these", "player")	
+		
+		break
+		
+		case"ghost_initial":
+		
+		scr_text("what the...", "player")				
+		scr_text("Those eyes are definitely not good", "player")				
+			scr_text_color(6,10, c_orange,c_orange,c_orange,c_orange)		
+		
+		break
 
 
+		case"loop_escaped":
+		scr_text("guess I escaped that loop..", "player")			
+		scr_text("I have to find a better place for my GPS to work", "player")			
+		
+		break
+		
+		case"2f_comments":
+		scr_text("blood....", "player")			
+		
+		
+		break
+		
+		case"2f_cat":
+		scr_text("the cat...?", "player")			
+		
+		break
+		
+		case"loft_initial":
+		obj_player.image_xscale = 1		
+		scr_text("...", "player")		
+		scr_text("oh no.....", "player")
+		scr_text("rest in peace.. little guy,,", "player")		
+		scr_text("...I have no time for sorrow", "player")			
+		scr_text("I have to get help first", "player")				
+		scr_text("Press TAB to open backpack. Use RIGHT CLICK to use GPS.")	
+			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
+			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
+		break
+		
+		
+		case"GPS-final":
+		scr_text("......")		
+		scr_text("no signal...", "player")		
+				scr_option("(try again)", "gps-1")		
+		break
+		
+		case"gps-1":		
+		scr_text("......")		
+		scr_text("NO SIGNAL...", "player")			
+				scr_option("(TRY AGAIN)", "gps-2")			
+		break	
+		
+		case"gps-2":	
+		obj_loft_dead.appear = true	
+		scr_text("!!!")
+		scr_text("WHAT IS HAPPENING")	
+			scr_text_shake(0,17)			
+		scr_text("")	
+				scr_option("TRY AGAIN!", "gps-3")			
+		break			
+		
+		case"gps-3":		
+		scr_text("")	
+		obj_room_transition_out_loft.start_transition = true		
+		break
+		
+		case"textile_pickup":
+		scr_text("This looks familiar ", "player")	
+				scr_option("(Take a look at it)" , "textile_finish")				
+		break
+			
+		case"textile_finish":	
+		scr_text("...", "player")			
+		scr_text("something feels different with this white textile", "player")				
+		obJ_white_textile_big.appear = false				
+		obj_screen_effect_item_pickup.appear = false		
+		break	
+		
+		
+		case"final_initial":	
+		scr_text("")			
+		scr_text("Meow~","cat")		
+					scr_text_float(0,5)			
+					
+		break			
+		
+		
 }
 
 }

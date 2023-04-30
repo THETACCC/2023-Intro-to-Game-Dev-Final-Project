@@ -24,6 +24,7 @@
     {"name":"inst_41FC42F7","path":"rooms/rm_yuanzi/rm_yuanzi.yy",},
     {"name":"inst_265DB5AD","path":"rooms/rm_yuanzi/rm_yuanzi.yy",},
     {"name":"inst_1B5C421D_2","path":"rooms/rm_yuanzi/rm_yuanzi.yy",},
+    {"name":"inst_3361748D","path":"rooms/rm_yuanzi/rm_yuanzi.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -37,6 +38,7 @@
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"dead_tree","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4983CA7D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_black_screen_tree","path":"objects/obj_black_screen_tree/obj_black_screen_tree.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":0.0,"y":0.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6F4B5BEE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dead_tree","path":"objects/obj_dead_tree/obj_dead_tree.yy",},"properties":[],"rotation":0.0,"scaleX":1.3497981,"scaleY":1.3650265,"x":24.0,"y":1.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3361748D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dead_tree_ghost","path":"objects/obj_dead_tree_ghost/obj_dead_tree_ghost.yy",},"properties":[],"rotation":0.0,"scaleX":1.3396084,"scaleY":1.3443929,"x":24.0,"y":5.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"BG_front","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_219D6C1F","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_yuanzi_front","path":"sprites/spr_yuanzi_front/spr_yuanzi_front.yy",},"x":-128.0,"y":0.0,},

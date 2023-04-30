@@ -22,3 +22,8 @@ if image_alpha < 0 {
 	}	
 
 }
+if appear =  true and sound_played = false
+{
+	audio_play_sound(snd_letter_flip,1,false)
+	sound_played = true	
+}

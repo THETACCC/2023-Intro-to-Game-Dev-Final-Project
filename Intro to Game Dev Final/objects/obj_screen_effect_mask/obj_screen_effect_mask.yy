@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_half_black",
-    "path": "sprites/spr_half_black/spr_half_black.yy",
+    "name": "spr_half_black_mask",
+    "path": "sprites/spr_half_black_mask/spr_half_black_mask.yy",
   },
   "spriteMaskId": null,
   "visible": true,

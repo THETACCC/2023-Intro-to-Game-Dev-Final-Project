@@ -5,6 +5,7 @@ mytime --
 }
 if mytime <= 0 
 {
+audio_play_sound(snd_light_open,1,false)	
 	
 instance_create_layer(32,58,"light",obj_light_puzzle_white)	
 counted = true

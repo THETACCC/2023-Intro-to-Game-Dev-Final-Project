@@ -10,7 +10,8 @@ if instance_place (x,y, obj_player) && keyboard_check(ord("F")) && !instance_exi
 		instance_destroy(obj_light_mask_room_spot)
 		instance_destroy(obj_F)		
 		instance_destroy(self)	
-		
+		audio_play_sound(snd_gongpin_start,1,false)
+		audio_play_sound(snd_gongpin_start_layer,1,false)		
 	}
 
 

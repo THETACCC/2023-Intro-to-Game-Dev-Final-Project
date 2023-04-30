@@ -18,6 +18,8 @@ global.kitchen_interaction = false
 global.picture_interaction = false
 global.after_kitchen = false
 global.cheif_initial = false
+global.puzzle_1f = false
+global.puzzle_mask = false
 enum Gamestate {
 
 	Play,

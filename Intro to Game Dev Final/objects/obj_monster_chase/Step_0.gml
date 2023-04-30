@@ -49,12 +49,23 @@ switch(state)
 		
 	}
 	
+	 if chase_audio_played = false
+	{
+		audio_play_sound(snd_monster_scream,1,false)
+		chase_audio_played = true
+	}
+	
 	break
 	
 	case "attack":
-
+	global.player_talking = true
 	sprite_index = spr_guard_attack
-
+	if audio_played = false
+	{
+		audio_play_sound(snd_women_scream,1,false)	
+		audio_play_sound(snd_knife,1,false)			
+		audio_played = true
+	}
 	break
 	
 	

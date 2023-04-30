@@ -4,5 +4,7 @@ if state == "attack"
 {
 
 	state = "chase"
-	room_restart()	
+	room_goto(rm_1f_passway_night)
+	obj_player.x = 326
+	obj_player.y = 240
 }

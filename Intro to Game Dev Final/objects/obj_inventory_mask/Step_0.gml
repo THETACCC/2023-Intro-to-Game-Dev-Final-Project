@@ -32,7 +32,9 @@ if inventory[0] = 5 and inventory[1] = 6 and inventory[2] = 7 and inventory[3] =
 	global.shake_magnitude = 8
 	global.shake_remain = global.shake_magnitude
 	global.shake_length = 60	
-	
+	audio_play_sound(snd_mask_change,1,false)
+	audio_play_sound(snd_puzzle_sovled,1,false)	
+	audio_play_sound(snd_monster_walking,1,false)		
 	shaked = true
 
 
