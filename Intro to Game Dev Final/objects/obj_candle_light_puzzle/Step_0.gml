@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if global.state = Gamestate.in_puzzle {
+if global.state = Gamestate.in_puzzle and image_alpha <= 1{
 	image_alpha += 0.02
 
-}else{
+}else if image_alpha >=  -0.1{
 
 	image_alpha -= 0.02
 }
