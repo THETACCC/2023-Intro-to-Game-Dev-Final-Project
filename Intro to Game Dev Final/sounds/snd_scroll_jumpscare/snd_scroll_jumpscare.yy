@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 2.533878,
+  "duration": 2.002,
   "parent": {
     "name": "effects",
     "path": "folders/Sounds/effects.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_scroll_jumpscare.mp3",
+  "soundFile": "snd_scroll_jumpscare.wav",
   "type": 0,
   "volume": 1.0,
 }
