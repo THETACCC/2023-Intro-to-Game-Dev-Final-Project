@@ -453,6 +453,7 @@
     {"id":{"name":"rm_end","path":"rooms/rm_end/rm_end.yy",},},
     {"id":{"name":"obj_player_light","path":"objects/obj_player_light/obj_player_light.yy",},},
     {"id":{"name":"spr_bedroom_without_BG","path":"sprites/spr_bedroom_without_BG/spr_bedroom_without_BG.yy",},},
+    {"id":{"name":"snd_scratch","path":"sounds/snd_scratch/snd_scratch.yy",},},
     {"id":{"name":"rm_ghost_chase3","path":"rooms/rm_ghost_chase3/rm_ghost_chase3.yy",},},
     {"id":{"name":"spr_door","path":"sprites/spr_door/spr_door.yy",},},
     {"id":{"name":"spr_mask_green_open","path":"sprites/spr_mask_green_open/spr_mask_green_open.yy",},},

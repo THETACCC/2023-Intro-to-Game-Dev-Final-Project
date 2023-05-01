@@ -17,7 +17,8 @@ if scroll = true and played = false
 	{
 	audio_play_sound(snd_scroll_jumpscare,1,false)	
 	audio_play_sound(snd_scroll_close,1,false)		
-	audio_play_sound(snd_trap,1,false)		
+	audio_play_sound(snd_trap,1,false)	
+	audio_play_sound(snd_cat_angry,1,false)		
 	}	
 	played = true
 	
