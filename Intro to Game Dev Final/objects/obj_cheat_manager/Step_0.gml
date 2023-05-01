@@ -3,6 +3,6 @@
 if keyboard_check_pressed(vk_space)
 {
 
-	room = rm_1f_passway
+	room = rm_1f_passway_night
 }
 

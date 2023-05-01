@@ -52,6 +52,7 @@
   "ResourceOrderSettings": [
     {"name":"composite_shadow_map","order":4,"path":"scripts/composite_shadow_map/composite_shadow_map.yy",},
     {"name":"spr_shop_owner","order":1,"path":"sprites/spr_shop_owner/spr_shop_owner.yy",},
+    {"name":"obj_light_mask_room_spot_white","order":24,"path":"objects/obj_light_mask_room_spot_white/obj_light_mask_room_spot_white.yy",},
     {"name":"lighting_free","order":6,"path":"scripts/lighting_free/lighting_free.yy",},
     {"name":"spr_mytextbox","order":5,"path":"sprites/spr_mytextbox/spr_mytextbox.yy",},
     {"name":"snd_2f_initial","order":26,"path":"sounds/snd_2f_initial/snd_2f_initial.yy",},
@@ -253,6 +254,7 @@
     {"name":"snd_after_kitchen","order":3,"path":"sounds/snd_after_kitchen/snd_after_kitchen.yy",},
     {"name":"obj_cat_move","order":56,"path":"objects/obj_cat_move/obj_cat_move.yy",},
     {"name":"spr_start_front","order":11,"path":"sprites/spr_start_front/spr_start_front.yy",},
+    {"name":"snd_chase_layer","order":9,"path":"sounds/snd_chase_layer/snd_chase_layer.yy",},
     {"name":"spr_npc2_speak","order":6,"path":"sprites/spr_npc2_speak/spr_npc2_speak.yy",},
     {"name":"light_create_extension","order":2,"path":"scripts/light_create_extension/light_create_extension.yy",},
     {"name":"spr_more_black","order":40,"path":"sprites/spr_more_black/spr_more_black.yy",},

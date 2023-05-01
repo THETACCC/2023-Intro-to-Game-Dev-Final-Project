@@ -617,7 +617,7 @@ switch(_text_id){
 		case"ghost_initial":
 		
 		scr_text("what the...", "player")				
-		scr_text("Those eyes are definitely not good", "player")				
+		scr_text("Those eyes are looking into one of the doors...", "player")				
 			scr_text_color(6,10, c_orange,c_orange,c_orange,c_orange)		
 		
 		break
@@ -696,7 +696,7 @@ switch(_text_id){
 		scr_text("")			
 		scr_text("Meow~","cat")		
 					scr_text_float(0,5)			
-					
+		scr_text("...To be continued")							
 		break			
 		
 		

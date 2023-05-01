@@ -69,6 +69,7 @@
   "resources": [
     {"id":{"name":"composite_shadow_map","path":"scripts/composite_shadow_map/composite_shadow_map.yy",},},
     {"id":{"name":"spr_shop_owner","path":"sprites/spr_shop_owner/spr_shop_owner.yy",},},
+    {"id":{"name":"obj_light_mask_room_spot_white","path":"objects/obj_light_mask_room_spot_white/obj_light_mask_room_spot_white.yy",},},
     {"id":{"name":"lighting_free","path":"scripts/lighting_free/lighting_free.yy",},},
     {"id":{"name":"spr_mytextbox","path":"sprites/spr_mytextbox/spr_mytextbox.yy",},},
     {"id":{"name":"snd_2f_initial","path":"sounds/snd_2f_initial/snd_2f_initial.yy",},},
@@ -288,6 +289,7 @@
     {"id":{"name":"snd_after_kitchen","path":"sounds/snd_after_kitchen/snd_after_kitchen.yy",},},
     {"id":{"name":"obj_cat_move","path":"objects/obj_cat_move/obj_cat_move.yy",},},
     {"id":{"name":"spr_start_front","path":"sprites/spr_start_front/spr_start_front.yy",},},
+    {"id":{"name":"snd_chase_layer","path":"sounds/snd_chase_layer/snd_chase_layer.yy",},},
     {"id":{"name":"spr_npc2_speak","path":"sprites/spr_npc2_speak/spr_npc2_speak.yy",},},
     {"id":{"name":"light_create_extension","path":"scripts/light_create_extension/light_create_extension.yy",},},
     {"id":{"name":"spr_more_black","path":"sprites/spr_more_black/spr_more_black.yy",},},

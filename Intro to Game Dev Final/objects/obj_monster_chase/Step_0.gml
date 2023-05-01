@@ -45,7 +45,7 @@ switch(state)
 	{
 		
 
-		move_and_collide(location * 1.4 , 0,obj_player)	
+		move_and_collide(location * 2.1 , 0,obj_player)	
 		
 	}
 	

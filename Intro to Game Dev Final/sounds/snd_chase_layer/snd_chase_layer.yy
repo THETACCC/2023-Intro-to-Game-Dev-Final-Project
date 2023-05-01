@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "snd_store_bgm",
+  "name": "snd_chase_layer",
   "audioGroupId": {
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 60.68245,
+  "duration": 69.146126,
   "parent": {
     "name": "bgm",
     "path": "folders/Sounds/bgm.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "snd_store_bgm.mp3",
+  "soundFile": "snd_chase_layer.mp3",
   "type": 0,
-  "volume": 0.25,
+  "volume": 0.66,
 }

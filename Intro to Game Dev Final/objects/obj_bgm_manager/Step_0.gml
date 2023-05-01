@@ -101,13 +101,17 @@ if room = rm_title or room = rm_start
 	{	
 	audio_play_sound(snd_heart_beat,1,true)	
 	audio_sound_gain(snd_heart_beat,0,0)		
-	audio_sound_gain(snd_heart_beat,0.2,4000)	
+	audio_sound_gain(snd_heart_beat,0.3,4000)	
 	audio_play_sound(snd_chase_bgm,1,true)	
 	audio_sound_gain(snd_chase_bgm,0,0)		
-	audio_sound_gain(snd_chase_bgm,0.2,4000)	
+	audio_sound_gain(snd_chase_bgm,0.3,4000)	
 	audio_play_sound(snd_chasing,1,true)	
 	audio_sound_gain(snd_chasing,0,0)		
-	audio_sound_gain(snd_chasing,0.2,4000)		
+	audio_sound_gain(snd_chasing,0.3,4000)	
+	audio_play_sound(snd_chase_layer,1,true)	
+	audio_sound_gain(snd_chase_layer,0,0)		
+	audio_sound_gain(snd_chase_layer,0.6,8000)		
+	
 	}	
 }else if room = rm_bedroom_night
 {
@@ -157,7 +161,12 @@ if room = rm_title or room = rm_start
 		if audio_sound_get_gain(snd_chasing) <= 0
 		{	
 		audio_stop_sound(snd_chasing)	
-		}		
+		}	
+audio_sound_gain(snd_chase_layer,0,2000)
+		if audio_sound_get_gain(snd_chase_layer) <= 0
+		{	
+		audio_stop_sound(snd_chase_layer)	
+		}			
 		
 	}	
 	
