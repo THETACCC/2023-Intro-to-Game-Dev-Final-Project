@@ -9,6 +9,7 @@
 	obj_F.my_create = false
 	 instance_create_layer(obj_camera.x,obj_camera.y,"puzzles",obj_candle_puzzle)
 	 instance_create_layer(obj_camera.x,obj_camera.y+120,"puzzles",obj_candle_light_puzzle)
+	 instance_create_layer(obj_camera.x + 280,obj_camera.y+140,"puzzles",obj_mouse_help)	 
 	 instance_create_layer(obj_camera.x,obj_camera.y - 40,"puzzle_2",obj_candle_puzzle_corret_place)	 	 
 	 instance_create_layer(0,0,"screen_effect",obj_screen_effect)	 
 	 check_time = check_timer
