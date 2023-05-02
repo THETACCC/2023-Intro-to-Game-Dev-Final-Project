@@ -17,8 +17,6 @@ if sound_played = false and appear = true
 	audio_play_sound(snd_scroll_jumpscare,1,false)			
 	audio_play_sound(snd_ghost_jumpscare,1,false)
 	audio_play_sound(snd_heart_beat,1,true)	
-	audio_play_sound(snd_glitch,1,true)	
-	audio_play_sound(snd_monster_walking,1,true)
-	audio_play_sound(snd_running,1,true)	
+	audio_play_sound(snd_gongpin_start_layer,1,false)
 	sound_played = true	
 }

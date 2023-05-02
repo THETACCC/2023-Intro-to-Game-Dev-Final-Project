@@ -630,23 +630,22 @@ switch(_text_id){
 		break
 		
 		case"2f_comments":
-		scr_text("blood....", "player")			
+		scr_text("......", "player")			
 		
 		
 		break
 		
 		case"2f_cat":
-		scr_text("the cat...?", "player")			
+		scr_text("Those footprints...I must hurry!", "player")			
 		
 		break
 		
 		case"loft_initial":
 		obj_player.image_xscale = 1		
 		scr_text("...", "player")		
-		scr_text("oh no.....", "player")
-		scr_text("rest in peace.. little guy,,", "player")		
-		scr_text("...I have no time for sorrow", "player")			
-		scr_text("I have to get help first", "player")				
+		scr_text("That lunatic! How could he....no, I was warned before, I should have realized earlier.", "player")
+		scr_text("Those people of Zhou have all gone mad.", "player")		
+		scr_text("Must call for help with the GPS! Now!", "player")					
 		scr_text("Press TAB to open backpack. Use RIGHT CLICK to use GPS.")	
 			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
 			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
@@ -655,29 +654,38 @@ switch(_text_id){
 		
 		case"GPS-final":
 		scr_text("......")		
-		scr_text("no signal...", "player")		
+		scr_text("no signal...")	
+		scr_text("Please! I need to get rescued!", "player")			
 				scr_option("(try again)", "gps-1")		
 		break
 		
-		case"gps-1":		
-		scr_text("......")		
-		scr_text("NO SIGNAL...", "player")			
+		case"gps-1":
+		obj_loft_dead.appear = true			
+		scr_text("!!!")		
+		scr_text("NO SIGNAL...")	
+		scr_text("No....no....","player")				
 				scr_option("(TRY AGAIN)", "gps-2")			
 		break	
 		
-		case"gps-2":	
-		obj_loft_dead.appear = true	
-		scr_text("!!!")
-		scr_text("WHAT IS HAPPENING")	
-			scr_text_shake(0,17)			
-		scr_text("")	
-				scr_option("TRY AGAIN!", "gps-3")			
+		case"gps-2":		
+		obj_loft_sound_manager.play = true
+		scr_text("")		
+		scr_text("I don't want to die....")	
+				scr_option("HANG ON", "gps-3")	
+				scr_option("GIVE UP", "give_up")						
 		break			
 		
 		case"gps-3":		
-		scr_text("")	
-		obj_room_transition_out_loft.start_transition = true		
+		scr_text("....")	
+				scr_option("GIVE UP", "give_up")
+				scr_option("GIVE UP", "give_up")					
 		break
+		
+		case"give_up":		
+		scr_text("")	
+		obj_room_transition_out_loft.start_transition = true				
+		break		
+		
 		
 		case"textile_pickup":
 		scr_text("This looks familiar ", "player")	

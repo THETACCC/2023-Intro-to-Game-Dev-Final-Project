@@ -140,9 +140,16 @@ state_free = function()
 		if instance_exists(obj_mytextbox) {
 		instance_destroy(obj_mytextbox)	
 				create_textbox("GPS-final")
-	
+				audio_play_sound(snd_loft_sound_2,0.8,true)
+					audio_play_sound(snd_chasing,1,true)	
+					audio_sound_gain(snd_chasing,0,0)		
+					audio_sound_gain(snd_chasing,0.6,8000)	
 		} else {
-		create_textbox("GPS-final")									
+		create_textbox("GPS-final")		
+				audio_play_sound(snd_loft_sound_2,0.8,true)
+					audio_play_sound(snd_chasing,1,true)	
+					audio_sound_gain(snd_chasing,0,0)		
+					audio_sound_gain(snd_chasing,0.6,8000)	
 		}
 		}		
 		

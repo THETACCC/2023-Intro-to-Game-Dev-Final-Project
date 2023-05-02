@@ -29,3 +29,9 @@ if open_credit = false and image_alpha <= 1
 image_alpha += 0.05	
 	
 }
+if instance_exists(obj_mytextbox)
+{
+	
+
+	instance_destroy(self)
+}

@@ -2,7 +2,12 @@
 // You can write your code in this editor
 
 if start_transition = true {
-image_alpha += 0.005
+	if audio_is_playing(snd_scroll_jumpscare)
+	
+	{
+	audio_play_sound(snd_scroll_jumpscare,1,false)
+	}
+image_alpha += 1
 global.player_talking = true
 obj_player.m_vvel = 0
 obj_player.m_hvel = 0

@@ -107,7 +107,7 @@ if room = rm_title or room = rm_start
 	audio_sound_gain(snd_chase_bgm,0.3,4000)	
 	audio_play_sound(snd_chasing,1,true)	
 	audio_sound_gain(snd_chasing,0,0)		
-	audio_sound_gain(snd_chasing,0.3,4000)	
+	audio_sound_gain(snd_chasing,0.7,4000)	
 	audio_play_sound(snd_chase_layer,1,true)	
 	audio_sound_gain(snd_chase_layer,0,0)		
 	audio_sound_gain(snd_chase_layer,0.6,8000)		
