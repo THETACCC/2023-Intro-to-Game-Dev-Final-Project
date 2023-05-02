@@ -6,18 +6,20 @@ switch(_text_id){
 
 		case"title":	
 
-		scr_text("From memory onwards, I have always had the same dream." )		
-		scr_text("At first, I always stood at the foot of the mountain,")	
-		scr_text("but as the dream proceeded, I would lose my perception of my form and be attracted by a certain consciousness to fly towards the mountains.")			
-		scr_text("As I approached, I was finally able to cross the thick mountain mist and see the true nature of the light spots in the mountains:") 
-		scr_text("they were lanterns hanging from the old eaves, clearly without wind, but slowly swaying neatly.")	
-		scr_text("With the help of those dim lights, I saw an ancient and dilapidated village, stacked and scattered in the mountains, covered by huge and withered tree roots.")			
-		scr_text("In the shadows cast by those roots, something was vaguely wriggling and surging, ready to break through from the darkness at any time.")
-		scr_text("This was originally a scene full of profanity, but I uncontrollably grew eager to move forward, even to touch the wriggling shadows.")			
-		scr_text("And whenever this happens, my field of vision is suddenly occupied by a sudden burst of white light, and when I open my eyes, it's another morning.")			
-		scr_text("Why do I constantly dream of all this, does the mountain village in my dream really exist?")				
-		scr_text("For many years, doubts and nightmares have been constantly troubling me, accompanied by a strange premonition.")						
-		scr_text("This premonition grew stronger as I grew older, and I couldn't help but believe that one day, I would return to my dream village and find all the answers with my own hands.")				
+		scr_text("From memory onwards, I have always had the same dream.","image1" )	
+		scr_text("It's about a foggy vally with black mountains, decorated with crimson red lights", "image2")			
+		scr_text("At first, I always stood at the foot of the mountain,", "image3")	
+		scr_text("but as the dream proceeded, I would lose my perception of my form", "image4")
+		scr_text("and be attracted by a certain consciousness to fly towards the mountains.","image5")			
+		scr_text("As I approached, I was finally able to cross the thick mountain mist and see the true nature of the light spots in the mountains:", "image6") 
+		scr_text("they were lanterns hanging from the old eaves, clearly without wind, but slowly swaying neatly.","image6_6")	
+		scr_text("With the help of those dim lights, I saw an ancient and dilapidated village, stacked and scattered in the mountains, covered by huge and withered tree roots.","image7")			
+		scr_text("In the shadows cast by those roots, something was vaguely wriggling and surging, ready to break through from the darkness at any time.","image7_7")
+		scr_text("This was originally a scene full of profanity, but I uncontrollably grew eager to move forward, even to touch the wriggling shadows.","image8")			
+		scr_text("And whenever this happens, my field of vision is suddenly occupied by a sudden burst of white light, and when I open my eyes, it's another morning.","image9")			
+		scr_text("Why do I constantly dream of all this, does the mountain village in my dream really exist?","image9_9")				
+		scr_text("For many years, doubts and nightmares have been constantly troubling me, accompanied by a strange premonition.","image10")						
+		scr_text("This premonition grew stronger as I grew older, and I couldn't help but believe that one day, I would return to my dream village and find all the answers with my own hands.","image10_10")				
 		
 		break		
 		
@@ -538,7 +540,7 @@ switch(_text_id){
 		case"player_hide":
 		obj_cat_move.state = "chase"
 		scr_text("That guy looks dangerous...", "player")		
-		scr_text("I should not make a sound", "player")			
+		scr_text("I should not make a sound..", "player")			
 		
 		
 		break	
@@ -609,8 +611,8 @@ switch(_text_id){
 		case"mask_puzzle_initial":
 		
 		scr_text("what are these...", "player")				
-		scr_text("It seems like these two rooms are connected in some way", "player")				
-			scr_text_color(20,29, c_orange,c_orange,c_orange,c_orange)				
+		scr_text("There should be more evidences around the first floor..", "player")				
+
 		
 		break
 		

@@ -177,6 +177,96 @@ if argument_count > 1 {
 			snd[page_number] = snd_npc_speak	
 			sound_effect[page_number] =	snd_glitch	
 		break;
+		
+		case "image1":
+			speaker_sprite[page_number] = spr_image1
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;		
+		
+		case "image2":
+			speaker_sprite[page_number] = spr_image2
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
+		
+		case "image3":
+			speaker_sprite[page_number] = spr_image3
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;	
+		
+		case "image4":
+			speaker_sprite[page_number] = spr_image4
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
+		
+		case "image5":
+			speaker_sprite[page_number] = spr_image5
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;		
+		
+		case "image6":
+			speaker_sprite[page_number] = spr_image6
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;				
+		
+		case "image7":
+			speaker_sprite[page_number] = spr_image7
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;		
+		
+		case "image8":
+			speaker_sprite[page_number] = spr_image8
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
+		
+		case "image9":
+			speaker_sprite[page_number] = spr_image9
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;		
+		
+		case "image10":
+			speaker_sprite[page_number] = spr_image10
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
+		
+		case "image6_6":
+			speaker_sprite[page_number] = spr_image6_6
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;	
+		
+		case "image7_7":
+			speaker_sprite[page_number] = spr_image7_7
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;		
+		
+		case "image8_8":
+			speaker_sprite[page_number] = spr_image8_8
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
+		
+		case "image9_9":
+			speaker_sprite[page_number] = spr_image9_9
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;	
+		
+		case "image10_10":
+			speaker_sprite[page_number] = spr_image10_10
+			txtb_spr[page_number] = spr_mytextbox_intro
+			snd[page_number] = snd_npc_speak	
+		break;			
 
 	}
 

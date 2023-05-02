@@ -10,8 +10,10 @@ obj_player.image_index = spr_player_idle
 }
 if image_alpha >=  1
 {
+
 	if text_created = false
 	{
+		instance_create_depth(0,0,-99999,obj_title_effects)
 	obj_player.x = 356
 	obj_player.y = 240		
 	create_textbox("title")

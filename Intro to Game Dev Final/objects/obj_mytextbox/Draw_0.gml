@@ -33,6 +33,7 @@ if setup == false {
 
 	for(var p = 0; p < page_number; p++) 
 	{
+
 		text_length[p] = string_length(text[p])	
 		//get x position for my text box
 			//character on the lesft
@@ -46,7 +47,7 @@ if setup == false {
 			}
 			
 			//no character		
-			if speaker_sprite[p] = noone {
+			if speaker_sprite[p] = noone or speaker_sprite[p] = spr_image1 or speaker_sprite[p] = spr_image2 or speaker_sprite[p] = spr_image3 or speaker_sprite[p] = spr_image4 or speaker_sprite[p] = spr_image5 or speaker_sprite[p] = spr_image6 or speaker_sprite[p] = spr_image7 or speaker_sprite[p] = spr_image8 or speaker_sprite[p] = spr_image9 or speaker_sprite[p] = spr_image10 or speaker_sprite[p] = spr_image6_6 or speaker_sprite[p] = spr_image7_7 or speaker_sprite[p] = spr_image8_8 or speaker_sprite[p] = spr_image9_9 or speaker_sprite[p] = spr_image10_10 {
 					text_x_offset[p] = 80
 			}
 
@@ -181,6 +182,7 @@ if accept_key
 	//next page
 	if page < page_number-1
 		{
+		image_index = 0	
 		page ++
 		draw_char = 0
 		}
@@ -231,16 +233,29 @@ var _txtb_y = textbox_y
 txtb_img += txtb_img_spd
 txtb_spr_w = sprite_get_width(txtb_spr[page])
 txtb_spr_h = sprite_get_height(txtb_spr[page])
+
+draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1)
 //draw the speaker
 if speaker_sprite[page] != noone {
 	sprite_index = speaker_sprite[page]
-	if draw_char == text_length[page] {image_index = 0 }
+
+
+
 	var _speaker_x = textbox_x + portrait_x_offset[page]
 	if speaker_side[page] == -1 {_speaker_x += sprite_width}
+	if draw_char == text_length[page]
+	{
+		image_index = 10 
+	}		
+		
+	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1)				
+
 	
+	
+
 	//draw the speaker
 	//draw_sprite_ext(txtb_spr[page], txtb_img, textbox_x + portrait_x_offset[page], textbox_y, 80/txtb_spr_w, 80/txtb_spr_h, 0, c_white,1)
-	draw_sprite_ext(sprite_index, image_index, _speaker_x, textbox_y, speaker_side[page], 1, 0, c_white, 1)
+
 
 }  
 
@@ -262,7 +277,7 @@ else if instance_exists(obj_F_talking)
 
 
 //back of the box
-draw_sprite_ext(txtb_spr[page], txtb_img, _txtb_x, _txtb_y, textbox_width/txtb_spr_w, textbox_height/txtb_spr_h, 0, c_white, 1)
+
 
 
 
