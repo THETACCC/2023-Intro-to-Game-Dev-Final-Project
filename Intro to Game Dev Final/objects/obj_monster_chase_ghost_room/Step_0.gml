@@ -3,6 +3,7 @@
 switch(state)
 {	
 	case "idle":
+	sprite_index = spr_guard_idle	
 	image_xscale = sign(obj_player.x - x) * -1
 	if image_xscale == 0
 	{
@@ -11,10 +12,7 @@ switch(state)
 		
 	}	
 	
-	 if start_chase = true and !instance_exists(obj_mytextbox)
-	 {
-		state = "chase" 
-	 }
+
 	
 	break
 	
@@ -54,12 +52,13 @@ switch(state)
 		chase_audio_played = true
 	}
 	
-	if obj_room_transition_out.image_alpha >= 0
+	if obj_room_transition_out.start_transition = true
 	{
 		
-		state = "idle"		
-		
-	}	
+	state =	"idle"
+	}
+	
+
 	break
 	
 	case "attack":

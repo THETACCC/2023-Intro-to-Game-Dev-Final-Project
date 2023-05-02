@@ -14,7 +14,6 @@ if instance_place(x,y,obj_player) {
 	obj_player.image_index = spr_player_idle	
 	obj_room_transition_out.start_transition = true
 
-		
 	}
 
 	if transition = true {

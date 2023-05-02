@@ -3,6 +3,7 @@
 switch(state)
 {	
 	case "idle":
+	sprite_index = spr_guard_idle		
 	image_xscale = sign(obj_player.x - x) * -1
 	if image_xscale == 0
 	{
@@ -11,9 +12,10 @@ switch(state)
 		
 	}	
 	
-	 if start_chase = true and !instance_exists(obj_mytextbox)
+	 if !instance_exists(obj_mytextbox) and start_chase = true and chased = false
 	 {
 		state = "chase" 
+		chased = true
 	 }
 	
 	break
@@ -34,10 +36,10 @@ switch(state)
 	location = sign(obj_player.x - x)
 	
 	var distance_to_player = point_distance(x,y,obj_player.x,obj_player.y)
-	if distance_to_player < 64 
+	if distance_to_player < 72
 	{
-
-		state = "attack"		
+	show_debug_message("attack")
+	state = "attack"		
 	image_index = 0
 		
 	}
@@ -45,7 +47,7 @@ switch(state)
 	{
 		
 
-		move_and_collide(location * 2.1 , 0,obj_player)	
+		move_and_collide(location * 2, 0,obj_player)	
 		
 	}
 	
@@ -55,18 +57,18 @@ switch(state)
 		chase_audio_played = true
 	}
 	
-	if obj_room_transition_out.image_alpha >= 0
+
+	if obj_room_transition_out.start_transition = true
 	{
 		
-		state = "idle"		
-		
+	state =	"idle"
 	}
-	
 	
 	
 	break
 	
 	case "attack":
+
 	global.player_talking = true
 	sprite_index = spr_guard_attack
 	if audio_played = false

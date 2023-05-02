@@ -3,5 +3,6 @@
 state = "idle"
 location = -1
 start_chase = false
+chased = false
 audio_played = false
 chase_audio_played = false

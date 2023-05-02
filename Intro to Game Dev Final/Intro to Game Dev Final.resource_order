@@ -35,6 +35,7 @@
     {"name":"effects","order":3,"path":"folders/Sounds/effects.yy",},
     {"name":"scary sounds","order":5,"path":"folders/Sounds/scary sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"animations","order":45,"path":"folders/Sprites/animations.yy",},
     {"name":"Assets","order":37,"path":"folders/Sprites/Assets.yy",},
     {"name":"Items","order":19,"path":"folders/Sprites/Items.yy",},
     {"name":"Lighting","order":26,"path":"folders/Sprites/Lighting.yy",},
@@ -48,7 +49,6 @@
     {"name":"UI","order":32,"path":"folders/Sprites/UI.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"animations","order":45,"path":"folders/Sprites/animations.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"composite_shadow_map","order":4,"path":"scripts/composite_shadow_map/composite_shadow_map.yy",},
