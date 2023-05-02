@@ -55,6 +55,15 @@ switch(state)
 		chase_audio_played = true
 	}
 	
+	if obj_room_transition_out.image_alpha >= 0
+	{
+		
+		state = "idle"		
+		
+	}
+	
+	
+	
 	break
 	
 	case "attack":

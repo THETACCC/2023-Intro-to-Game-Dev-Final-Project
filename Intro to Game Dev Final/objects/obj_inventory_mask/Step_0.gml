@@ -29,6 +29,7 @@ if solved = true and speaked = false {
 }
 if inventory[0] = 5 and inventory[1] = 6 and inventory[2] = 7 and inventory[3] = 8 and shaked = false
 {
+	instance_activate_object(obj_invisible_wall)	
 	global.shake_magnitude = 8
 	global.shake_remain = global.shake_magnitude
 	global.shake_length = 60	

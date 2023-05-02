@@ -73,7 +73,7 @@ state_free = function()
 {
 	mouse_over()
 	//Start to drag an itm if slot is not empty
-	if (mouse_check_button(mb_left) && (slot_hover != -1) && (inventory_hover.inventory[slot_hover] != 1))
+	if (mouse_check_button(mb_right) && (slot_hover != -1) && (inventory_hover.inventory[slot_hover] != 1))
 	{
 		//enter drag state
 		state = state_drag
@@ -84,7 +84,7 @@ state_free = function()
 	}
 		
 	//Open the object if it's interactable	
-	if (mouse_check_button_pressed(mb_right) && (slot_hover != -1) && (inventory_hover.inventory[slot_hover] != 1))
+	if (mouse_check_button_pressed(mb_left) && (slot_hover != -1) && (inventory_hover.inventory[slot_hover] != 1))
 	{
 		if inventory_hover.inventory[slot_hover] = 0
 		{
@@ -151,7 +151,18 @@ state_free = function()
 					audio_sound_gain(snd_chasing,0,0)		
 					audio_sound_gain(snd_chasing,0.6,8000)	
 		}
-		}		
+		}	
+		if inventory_hover.inventory[slot_hover] = 2
+		{
+			
+		if instance_exists(obj_mytextbox) {
+		instance_destroy(obj_mytextbox)	
+				create_textbox("abacus-talk")
+	
+		} else {
+		create_textbox("abacus-talk")									
+		}
+		}
 		
 	}
 	
@@ -170,7 +181,7 @@ state_free = function()
 state_drag = function()
 {
 	mouse_over()
-	if (!mouse_check_button(mb_left))
+	if (!mouse_check_button(mb_right))
 	{
 		//swap with slot if hvoering
 		if (slot_hover != -1) scr_inventory_swap(inventory_drag,slot_drag,inventory_hover,slot_hover)

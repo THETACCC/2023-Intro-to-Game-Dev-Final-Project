@@ -53,6 +53,13 @@ switch(state)
 		audio_play_sound(snd_monster_scream,1,false)
 		chase_audio_played = true
 	}
+	
+	if obj_room_transition_out.image_alpha >= 0
+	{
+		
+		state = "idle"		
+		
+	}	
 	break
 	
 	case "attack":

@@ -11,6 +11,7 @@ image_alpha += 0.05
 	if check_time <= 0  {
 	obj_door.target_room = rm_1f_passway_night
 	obj_player.allow_inventory = true	
+	instance_deactivate_object(obj_invisible_wall)		
 	audio_play_sound(snd_pickup,1,false)
 	instance_destroy(self)
 	}

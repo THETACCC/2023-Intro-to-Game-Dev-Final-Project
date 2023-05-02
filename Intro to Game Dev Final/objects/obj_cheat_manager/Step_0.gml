@@ -3,6 +3,6 @@
 if keyboard_check_pressed(vk_space)
 {
 
-//	room = rm_2f_passway_night_after_puzzle
+//room = rm_1f_passway_night_without_ghost
 }
 

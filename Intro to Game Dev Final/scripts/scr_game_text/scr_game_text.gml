@@ -86,9 +86,9 @@ switch(_text_id){
 		
 		case "start":
 		scr_text("So, this must be the small town mentioned by chief editor Zhao. Where's that introduce letter? I think I packed it into my bag.", "player")		
-		scr_text("Press TAB to open backpack. Use RIGHT CLICK to open the letter.")	
+		scr_text("Press TAB to open backpack. Use LEFT CLICK to open the letter.")	
 			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
-			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
+			scr_text_color(32,42, c_green,c_green,c_green,c_green)			
 		instance_destroy(obj_startgame_talk)		
 		break
 		
@@ -336,9 +336,9 @@ switch(_text_id){
 		scr_text("Are these vines supposed to be here?", "player")		
 		scr_text("....", "player")
 		scr_text("Maybe it's just too dark that I didn't see", "player")				
-		scr_text("Press TAB to open backpack. Use RIGHT CLICK to turn on the light.")	
+		scr_text("Press TAB to open backpack. Use LEFT CLICK to turn on the light.")	
 			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
-			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
+			scr_text_color(32,42, c_green,c_green,c_green,c_green)			
 		break		
 		
 		
@@ -499,7 +499,7 @@ switch(_text_id){
 		scr_text("...", "player")			
 		scr_text("Looks like someone stole my bag", "player")	
 		scr_text("This is NOT GOOD", "player")			
-		scr_text("I have find my bag and get out of here", "player")				
+		scr_text("I have to find my bag and get out of here", "player")				
 		
 		break	
 		
@@ -610,7 +610,7 @@ switch(_text_id){
 		
 		scr_text("what are these...", "player")				
 		scr_text("It seems like these two rooms are connected in some way", "player")				
-		scr_text("I should investigate both rooms to undersand these", "player")	
+			scr_text_color(20,29, c_orange,c_orange,c_orange,c_orange)				
 		
 		break
 		
@@ -646,9 +646,9 @@ switch(_text_id){
 		scr_text("That lunatic! How could he....no, I was warned before, I should have realized earlier.", "player")
 		scr_text("Those people of Zhou have all gone mad.", "player")		
 		scr_text("Must call for help with the GPS! Now!", "player")					
-		scr_text("Press TAB to open backpack. Use RIGHT CLICK to use GPS.")	
+		scr_text("Press TAB to open backpack. Use LEFT CLICK to use GPS.")	
 			scr_text_color(6,9, c_green,c_green,c_green,c_green)	
-			scr_text_color(32,43, c_green,c_green,c_green,c_green)			
+			scr_text_color(32,42, c_green,c_green,c_green,c_green)			
 		break
 		
 		
@@ -676,7 +676,8 @@ switch(_text_id){
 		break			
 		
 		case"gps-3":		
-		scr_text("....")	
+		scr_text("")	
+		scr_text("....")			
 				scr_option("GIVE UP", "give_up")
 				scr_option("GIVE UP", "give_up")					
 		break
@@ -705,9 +706,19 @@ switch(_text_id){
 		scr_text("Meow~","cat")		
 					scr_text_float(0,5)			
 		scr_text("...To be continued")							
-		break			
+		break		
+		
+		case"abacus-talk":
+		
+		scr_text("I should give this back to the shop owner.","player")			
+		
+		break		
 		
 		
+		case"mask_backpack":
+		scr_text("I haven't take my back pack.","player")			
+		
+		break
 }
 
 }
